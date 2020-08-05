@@ -6,6 +6,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         <h1>Drew -- Portfolio Website</h1>
+        <p>testing email sync to git</p>
       </header>
     </div>
   );
