@@ -1,0 +1,32 @@
+.global-header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  background-color: rgba(151, 151, 151, 0.555);
+  transition: all .5s ease-in-out;
+  &:hover, .content {
+    background-color: white;
+    a {
+      color: black;
+    }
+  }
+
+  &-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1160px;
+    padding: 0 20px;
+    a {
+      color: white;
+      text-decoration: none;
+      transition: all .5s ease-in-out;
+    }
+  }
+}
