@@ -28,3 +28,19 @@
     }
   }
 }
+
+@media (max-width: 767px){
+  .global-header {
+    background-color: $tan-background;
+  
+    &-content-logo {
+      z-index: 2;
+      img {
+        width: 100px;
+      }
+      h1 {
+        display: none;
+      }
+    }
+  }
+}

@@ -10,7 +10,7 @@
 
   &-item {
     @include blue-link-hover;
-    transition: all .5s ease-in-out;
+    transition: all .2s ease-in-out;
     &-wrap {
       margin: 0 50px 0 0;
       li {
@@ -18,10 +18,12 @@
       }
     }
     &:hover {
+      font-weight: bold;
       border-bottom: 1px solid $gold-accent;
     }
     &-active {
       color: $gold-accent;
+      font-weight: bold;
       border-bottom: 1px solid $gold-accent;
     }
   }
@@ -33,6 +35,56 @@
       margin: 0;
       li {
         padding: 5px;
+      }
+    }
+  }
+}
+
+@media (max-width: 767px){
+  .navbar {
+    &-hamburger {
+      @include flex-center;
+      @include fix-vertical;
+      flex-direction: column;
+      top: 0;
+      bottom: auto;
+      width: 100vw;
+      background-color: $tan-background;
+      margin: 0;
+      z-index: 1;
+    }
+
+    .open-icon, .close-icon {
+      align-self: flex-end;
+      font-size: 25px;
+      padding: 10px;
+    }
+
+    .close-icon {
+      margin-right: 20px;
+    }
+  
+    &-item {
+      &-wrap {
+        display: flex;
+        flex-direction: column;
+        margin: 20px 0 0 0;
+        li {
+          font-size: 18px;
+        }
+      }
+      &:hover {
+        border-bottom: none;
+      }
+      &-active {
+        border-bottom: none;
+      }
+    }
+  
+    &-icon {
+      margin: 5px;
+      &-wrap {
+        border-top: 1px solid $blue-accent;
       }
     }
   }

@@ -11,7 +11,6 @@ const Header = () => {
           <img src={Logo} alt='Drew Verwiel Logo' />
           <h1>Drew Verwiel</h1>
         </Link>
-        
 
         <Navbar />
       </div>
