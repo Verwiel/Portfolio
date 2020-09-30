@@ -1,0 +1,20 @@
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin fix-vertical {
+  position: fixed;
+  right: 0;
+  left: 0;
+}
+
+@mixin blue-link-hover {
+  color: $blue-accent;
+  text-decoration: none;
+  transition: all .5s ease-in-out;
+  &:hover {
+    color: $gold-accent;
+  }
+}

@@ -1,0 +1,17 @@
+[
+  {
+    "icon": "github",
+    "type": "fab",
+    "route": "https://github.com/Verwiel"
+  },
+  {
+    "icon": "linkedin",
+    "type": "fab",
+    "route": "https://www.linkedin.com/in/drew-verwiel"
+  },
+  {
+    "icon": "envelope",
+    "type": "far",
+    "route": "mailto:drew_verwiel@outlook.com"
+  }
+]

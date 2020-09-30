@@ -1,21 +1,11 @@
 .global-header {
-  position: fixed;
+  @include flex-center;
+  @include fix-vertical;
   top: 0;
-  right: 0;
-  left: 0;
   bottom: auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   width: 100vw;
-  background-color: rgba(151, 151, 151, 0.555);
-  transition: all .5s ease-in-out;
-  &:hover, .content {
-    background-color: white;
-    a {
-      color: black;
-    }
-  }
+  height: 75px;
+  background-color: $tan-background;
 
   &-content {
     display: flex;
@@ -23,10 +13,18 @@
     align-items: center;
     width: 1160px;
     padding: 0 20px;
-    a {
-      color: white;
+
+    &-logo {
+      display: flex;
+      align-items: center;
       text-decoration: none;
-      transition: all .5s ease-in-out;
+      img {
+        width: 100px;
+      }
+      h1 {
+        @include blue-link-hover;
+        margin: 0;
+      }
     }
   }
 }

@@ -1,11 +1,21 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import Navbar from './Navbar'
+import Logo from '../assets/logo.svg'
 
 const Header = () => {
   return (
-    <div>
-      <h1>Header</h1>
-    </div>
+    <header className='global-header'>
+      <div className='global-header-content'>
+        <Link to='/' className='global-header-content-logo'>
+          <img src={Logo} alt='Drew Verwiel Logo' />
+          <h1>Drew Verwiel</h1>
+        </Link>
+        
+
+        <Navbar />
+      </div>
+    </header>
   )
 }
 
