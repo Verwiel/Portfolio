@@ -33,13 +33,16 @@
   .global-header {
     background-color: $tan-background;
   
-    &-content-logo {
-      z-index: 2;
-      img {
-        width: 100px;
-      }
-      h1 {
-        display: none;
+    &-content {
+      padding: 0 20px 0 0;
+      &-logo {
+        z-index: 2;
+        img {
+          width: 100px;
+        }
+        h1 {
+          display: none;
+        }
       }
     }
   }

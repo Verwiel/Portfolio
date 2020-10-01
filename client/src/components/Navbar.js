@@ -29,33 +29,30 @@ const Navbar = () => {
 
   return (
     <nav className='navbar'>
-      <div>
-        {width > 768 ?
-          <>
-            <ul className='navbar-item-wrap'>
-              {internalLinksMap}
-            </ul>
-            <ul className='navbar-icon-wrap'>
-              {socialLinksMap}
-            </ul>
-          </>
-        : !isNavOpen &&
-          <FontAwesomeIcon icon={faBars} className='open-icon' onClick={() => setNavOpen(true)} />
+      {width > 768 ?
+        <>
+          <ul className='navbar-item-wrap'>
+            {internalLinksMap}
+          </ul>
+          <ul className='navbar-icon-wrap'>
+            {socialLinksMap}
+          </ul>
+        </>
+      : !isNavOpen &&
+        <FontAwesomeIcon icon={faBars} className='open-icon' onClick={() => setNavOpen(true)} />
+      } 
+
+      {(isNavOpen && !(width > 768)) && 
+        <nav className='navbar-hamburger' ref={navHamburger}>
+          <ul className='navbar-item-wrap'>
+            {internalLinksMap}
+          </ul>
+          <ul className='navbar-icon-wrap'>
+            {socialLinksMap}
+          </ul>
+          <FontAwesomeIcon icon={faChevronUp} className='close-icon' onClick={() => setNavOpen(false)} />
+        </nav>
       }
-      </div>
-      <div>
-        {(isNavOpen && !(width > 768)) && 
-          <nav className='navbar-hamburger' ref={navHamburger}>
-            <ul className='navbar-item-wrap'>
-              {internalLinksMap}
-            </ul>
-            <ul className='navbar-icon-wrap'>
-              {socialLinksMap}
-            </ul>
-            <FontAwesomeIcon icon={faChevronUp} className='close-icon' onClick={() => setNavOpen(false)} />
-          </nav>
-        }
-      </div>
     </nav>
   )
 }
