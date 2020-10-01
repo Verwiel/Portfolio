@@ -31,6 +31,7 @@
 
 @media (max-width: 767px){
   .global-header {
+    height: 50px;
     background-color: $tan-background;
   
     &-content {
@@ -38,7 +39,7 @@
       &-logo {
         z-index: 2;
         img {
-          width: 100px;
+          width: 75px;
         }
         h1 {
           display: none;
