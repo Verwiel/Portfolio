@@ -4,8 +4,8 @@ import useWindowDimensions from '../hooks/useWindowDimensions'
 import useOutsideClick from '../hooks/useOutsideClick'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars, faChevronUp } from '@fortawesome/free-solid-svg-icons'
-import internalLinks from '../JSON/internalNav.json'
-import socialLinks from '../JSON/socialNav.json'
+import internalLinks from '../data/internalNav.json'
+import socialLinks from '../data/socialNav.json'
 
 const Navbar = () => {
   const navHamburger = useRef()

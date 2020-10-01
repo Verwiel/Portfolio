@@ -1,0 +1,22 @@
+.projects {
+  @include flex-center;
+  flex-direction: column;
+
+  ul {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    list-style: none;
+    margin: 0;
+    padding: 20px;
+    max-width: 760px;
+  }
+}
+
+@media (max-width: 768px){
+  .projects {
+    ul {
+      @include flex-center;
+    }
+  }
+}

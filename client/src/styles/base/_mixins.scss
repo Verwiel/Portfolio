@@ -13,7 +13,7 @@
 @mixin blue-link-hover {
   color: $blue-accent;
   text-decoration: none;
-  transition: all .5s ease-in-out;
+  transition: all .3s ease-in-out;
   &:hover {
     color: $gold-accent;
   }
