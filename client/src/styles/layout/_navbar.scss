@@ -61,6 +61,7 @@
     }
 
     .close-icon {
+      padding-top: 0;
       margin-right: 20px;
     }
   
@@ -85,6 +86,10 @@
       margin: 5px;
       &-wrap {
         border-top: 1px solid $blue-accent;
+        margin: 0;
+        li {
+          padding: 10px 5px 0px 5px;
+        }
       }
     }
   }
