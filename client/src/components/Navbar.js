@@ -29,7 +29,7 @@ const Navbar = () => {
 
   return (
     <nav className='navbar'>
-      {width > 768 ?
+      {width >= 768 ?
         <>
           <ul className='navbar-item-wrap'>
             {internalLinksMap}
@@ -42,7 +42,7 @@ const Navbar = () => {
         <FontAwesomeIcon icon={faBars} className='open-icon' onClick={() => setNavOpen(true)} />
       } 
 
-      {(isNavOpen && !(width > 768)) && 
+      {(isNavOpen && width < 768) && 
         <nav className='navbar-hamburger' ref={navHamburger}>
           <ul className='navbar-item-wrap'>
             {internalLinksMap}
