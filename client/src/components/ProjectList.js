@@ -1,21 +1,39 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { projectData } from '../data/projects'
 import Project from './Project'
+import ProjectDetails from './ProjectDetails'
 
 const ProjectList = () => {
-  const projectMap = projectData.map((project, i) => (
-    <Project key={i} 
-      name={project.name} 
-      description={project.description} 
-      languages={project.languages} 
-      images={project.images}
-      thumbnail={project.thumbnail}
-    />
-  ))
+  const [projectOpen, setProjectOpen] = useState(false)
+  const [currentProject, setCurrentProject] = useState({})
+
+  const projectMap = projectData.map(project => {
+    const openProject = () => {
+      setCurrentProject(project)
+      setProjectOpen(true)
+    }
+    if(project.id !== currentProject.id){
+      return (
+          <Project key={project.id} 
+            name={project.name} 
+            thumbnail={project.thumbnail}
+            openProject={openProject}
+          />
+      )
+    } else { return null }
+  })
 
   return (
     <main className='projects'>
       <h2>Projects</h2>
+      {projectOpen &&
+        <ProjectDetails
+          name={currentProject.name}
+          description={currentProject.description}
+          languages={currentProject.languages}
+          images={currentProject.images}
+        />
+      }
       <ul>
         {projectMap}
       </ul>

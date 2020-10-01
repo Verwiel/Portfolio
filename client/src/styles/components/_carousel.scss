@@ -1,0 +1,18 @@
+.carousel {
+
+  &-slides {
+    display: flex;
+
+    &-active {
+      // This is the image
+      color: green;
+    }
+
+    &-inactive {
+      display: none;
+    }
+  }
+  &-info {
+    background-color: blue;
+  }
+}
