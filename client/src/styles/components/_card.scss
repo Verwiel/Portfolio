@@ -10,9 +10,11 @@
     transform: scale(1.25);
   }
 
-  img, p {
+  img, a {
     width: 150px;
     font-size: 14px;
+    text-decoration: none;
+    color: black;
     margin: 0;
   }
 }
@@ -36,7 +38,7 @@
 @media (max-width: 425px){
   .card {
     width: 100px;
-    img, p {
+    img, a {
       width: 100px;
     }
   }
