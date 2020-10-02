@@ -1,5 +1,6 @@
 .card {
   margin: 20px;
+  width: 150px;
   transition: all .3s ease-in-out;
   filter: grayscale(100);
   cursor: pointer;
@@ -9,14 +10,33 @@
     transform: scale(1.25);
   }
 
-  img {
+  img, p {
     width: 150px;
+    font-size: 14px;
+    margin: 0;
+  }
+}
+
+.viewing-card {
+  filter: grayscale(0);
+}
+
+@media (max-width: 768px){
+  .card {
+    filter: grayscale(0);
+    &:hover {
+      transform: none;
+    }
+  }
+  .viewing-card {
+    background-color: $tan-background;
   }
 }
 
 @media (max-width: 425px){
   .card {
-    img {
+    width: 100px;
+    img, p {
       width: 100px;
     }
   }

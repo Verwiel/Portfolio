@@ -1,10 +1,11 @@
 import React from 'react'
 
-const Project = ({ name, thumbnail, openProject }) => {
+const Project = ({ name, thumbnail, className, openProject }) => {
   return (
     <>
-      <li className='card' onClick={openProject}>
+      <li className={className} onClick={openProject}>
         <img src={thumbnail} alt={name} />
+        <p>{name}</p>
       </li>
     </>
   )

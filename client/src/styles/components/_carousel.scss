@@ -1,10 +1,18 @@
 .carousel {
+  // display: flex;
+  // flex-direction: column;
+  // justify-content: center;
+  // align-items: center;
+  width: 720px;
 
   &-slides {
     display: flex;
+    width: 100%;
+    justify-content: space-between;
 
     &-active {
       // This is the image
+      
       color: green;
     }
 
@@ -13,6 +21,12 @@
     }
   }
   &-info {
-    background-color: blue;
+    background-color: grey;
+  }
+}
+
+@media (max-width: 768px){
+  .carousel {
+    width: 80vw;
   }
 }

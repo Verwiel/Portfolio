@@ -12,15 +12,15 @@ const ProjectList = () => {
       setCurrentProject(project)
       setProjectOpen(true)
     }
-    if(project.id !== currentProject.id){
-      return (
-          <Project key={project.id} 
-            name={project.name} 
-            thumbnail={project.thumbnail}
-            openProject={openProject}
-          />
-      )
-    } else { return null }
+
+    return (
+        <Project key={project.id} 
+          name={project.name} 
+          thumbnail={project.thumbnail}
+          openProject={openProject}
+          className={project.id !== currentProject.id ? 'card' : 'card viewing-card'}
+        />
+    )
   })
 
   return (
