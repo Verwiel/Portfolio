@@ -1,4 +1,6 @@
 import React, { useState } from 'react'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons'
 
 const ProjectDetails = ({ name, description, languages, images }) => {
   const [activeIndex, setActiveIndex] = useState(0)
@@ -27,9 +29,13 @@ const ProjectDetails = ({ name, description, languages, images }) => {
   return (
     <div className='carousel'>
       <div className='carousel-slides'>
-        <button onClick={previousImage}>left</button>
+        <button onClick={previousImage}>
+          <FontAwesomeIcon icon={faChevronLeft} />
+        </button>
         {imageMap}
-        <button onClick={nextImage}>right</button>
+        <button onClick={nextImage}>
+          <FontAwesomeIcon icon={faChevronRight} />
+        </button>
       </div>
       <article className='carousel-info'>
         <h3>{name}</h3>
