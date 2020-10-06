@@ -49,7 +49,7 @@ export const technologiesData = [
         "image" : MongoDBLogo
     },
     {
-        "name" : "HTML",
+        "name" : "HTML 5",
         "image" : HTMLLogo
     },
     {
@@ -57,7 +57,7 @@ export const technologiesData = [
         "image" : JSLogo
     },
     {
-        "name" : "CSS",
+        "name" : "CSS 3",
         "image" : CSSLogo
     }
 ]

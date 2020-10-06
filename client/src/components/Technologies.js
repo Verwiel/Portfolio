@@ -2,9 +2,8 @@ import React from 'react'
 import { technologiesData } from '../data/technologies'
 
 const Technologies = () => {
-	// each will be an image with a hover title & alt
 	const technologiesMap = technologiesData.map(tech => (
-		<img style={{width: '100px'}} src={tech.image} alt={tech.name} title={tech.name} key={tech.name} />
+		<img style={{height: '50px'}} src={tech.image} alt={tech.name} title={tech.name} key={tech.name} />
 	))
 
 	return (
