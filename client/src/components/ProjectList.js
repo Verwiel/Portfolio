@@ -25,7 +25,7 @@ const ProjectList = () => {
 
   return (
     <main className='projects'>
-      <h2 id='projects'>Projects</h2>
+      <h2>Projects</h2>
       {projectOpen &&
         <ProjectDetails
           name={currentProject.name}

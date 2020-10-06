@@ -4,8 +4,9 @@ const Project = ({ name, thumbnail, className, openProject }) => {
   return (
     <>
       <li className={className} onClick={openProject}>
-        <img src={thumbnail} alt={name} />
-        <p><a href="#projects">{name}</a></p>
+        <a href="#projects"><img src={thumbnail} alt={name} />
+        <p>{name}</p>
+        </a>
       </li>
     </>
   )
