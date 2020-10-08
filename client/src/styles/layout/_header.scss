@@ -5,8 +5,9 @@
   bottom: auto;
   width: 100vw;
   height: 75px;
-  background-color: $tan-background;
+  background-color: transparent;
   z-index: 1;
+  transition: all .5s ease-in-out;
 
   &-content {
     display: flex;
@@ -30,10 +31,14 @@
   }
 }
 
+.scrolled-header {
+  background-color: $background-tan;
+}
+
 @media (max-width: 767px){
   .global-header {
     height: 50px;
-    background-color: $tan-background;
+    background-color: tan;
   
     &-content {
       padding: 0 20px 0 0;

@@ -13,14 +13,5 @@ code {
 }
 
 .App {
-  margin-top: 75px;
-  min-height: calc(100vh - 75px);
   text-align: center;
-}
-
-@media (max-width: 767px){
-  .App {
-    margin-top: 50px;
-    min-height: calc(100vh - 50px);
-  }
 }

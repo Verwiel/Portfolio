@@ -1,6 +1,7 @@
 .home {
-  background-color: gray;
-  width: 100vw;
-  min-height: 100vh;
-  padding-top: 100px;
+  @include pageWrap;
+  background-image: url('../../assets/SaltLake.jpg');
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: center;
 }
