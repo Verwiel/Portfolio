@@ -8,22 +8,25 @@
   background-position: center;
 
   &-content {
-    height: 200px;
+    // height: 200px;
     &-name {
       display: flex;
       justify-content: center;
       font-size: 32px;
+      margin-top: 20px;
+      
       &-first {
         color: $logo-blue;
+        margin: 0;
       }
       &-last {
         color: $logo-yellow;
-        margin-left: 10px;
+        margin: 0 0 0 10px;
       }
     }
 
     &-title {
-
+      font-size: 22px;
     }
   }
 }
