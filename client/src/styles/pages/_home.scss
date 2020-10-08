@@ -1,7 +1,29 @@
 .home {
   @include pageWrap;
+  display: flex;
+  justify-content: center;
   background-image: url('../../assets/SaltLake.jpg');
   background-repeat: no-repeat;
   background-size: auto;
   background-position: center;
+
+  &-content {
+    height: 200px;
+    &-name {
+      display: flex;
+      justify-content: center;
+      font-size: 32px;
+      &-first {
+        color: $logo-blue;
+      }
+      &-last {
+        color: $logo-yellow;
+        margin-left: 10px;
+      }
+    }
+
+    &-title {
+
+    }
+  }
 }
