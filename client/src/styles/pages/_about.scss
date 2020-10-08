@@ -1,4 +1,9 @@
 .about {
     @include pageWrap;
+    display: flex;
+    justify-content: center;
     background-color: $background-tan;
+    &-content {
+        width: 80vw;
+    }
 }
