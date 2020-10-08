@@ -6,9 +6,9 @@ import Logo from '../assets/logo.svg'
 const Header = () => {
   const [scrolled, setScrolled] = useState(false)
   const location = useLocation()
-  
+
   const changeHeaderBackground = () => {
-    window.scrollY >= 50 ? setScrolled(true) : setScrolled(false)
+    window.scrollY >= 20 ? setScrolled(true) : setScrolled(false)
   }
 
   window.addEventListener('scroll', changeHeaderBackground)

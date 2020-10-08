@@ -7,7 +7,7 @@
   height: 75px;
   background-color: transparent;
   z-index: 1;
-  transition: all .5s ease-in-out;
+  transition: all .3s ease-in-out;
 
   &-content {
     display: flex;
@@ -32,7 +32,7 @@
 }
 
 .scrolled-header {
-  background-color: $background-tan;
+  background-color: $brown-background;
 }
 
 @media (max-width: 767px){
