@@ -33,12 +33,13 @@
 
 .active-header {
   background-color: $dark-background;
+
 }
 
 @media (max-width: 767px){
   .global-header {
     height: 50px;
-    background-color: tan;
+    background-color: $dark-background;
   
     &-content {
       padding: 0 20px 0 0;

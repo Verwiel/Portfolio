@@ -1,12 +1,20 @@
 import React from 'react'
+import Test from '../assets/test.jpg'
 
 const About = () => {
   return (
     <div className='about'>
+      <header className='about-header'>
+        <div className='about-header-content'>
+          <h1>Hi,</h1>
+          <h1>I'm Drew Verwiel.</h1>
+          <p>I am a Salt Lake City based Full Stack Web Developer.</p>
+        </div>
+      </header>
+
       <div className='about-content'>
-        <h1>About Me</h1>
         <section>
-          <h2>Who I am / What I'm doing</h2>
+          <h2>What I'm doing</h2>
           <p>My name is Drew Verwiel and I am a Salt Lake City based Full Stack Web Developer.</p>
           <p>I currently work for InsideOut Development as an Application Developer. I spend most of my workday doing front-end development in React but my responsibilities also include: Writing back-end code with Node and Express, working with our MySQL database, and working through IT support tickets that come in.</p>
         </section>
