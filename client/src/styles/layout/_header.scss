@@ -24,15 +24,15 @@
         width: 100px;
       }
       h1 {
-        @include blue-link-hover;
+        @include white-link-hover;
         margin: 0;
       }
     }
   }
 }
 
-.scrolled-header {
-  background-color: $brown-background;
+.active-header {
+  background-color: $dark-background;
 }
 
 @media (max-width: 767px){

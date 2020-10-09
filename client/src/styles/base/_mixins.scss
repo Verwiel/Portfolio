@@ -10,8 +10,8 @@
   left: 0;
 }
 
-@mixin blue-link-hover {
-  color: $blue-accent;
+@mixin white-link-hover {
+  color: white;
   text-decoration: none;
   transition: all .3s ease-in-out;
   &:hover {

@@ -8,7 +8,6 @@
   background-position: center;
 
   &-content {
-    // height: 200px;
     &-name {
       display: flex;
       justify-content: center;
@@ -28,5 +27,11 @@
     &-title {
       font-size: 22px;
     }
+  }
+}
+
+@media (min-width: 1700px){
+  .home {
+    background-size: cover;
   }
 }

@@ -2,7 +2,7 @@
     @include pageWrap;
     display: flex;
     justify-content: center;
-    background-color: $background-tan;
+    background-color: $light-background;
     &-content {
         width: 80vw;
     }
