@@ -9,7 +9,7 @@ const Header = () => {
   const activeNav = location.pathname.length > 1
 
   const changeHeaderBackground = () => {
-    window.scrollY >= 20 ? setScrolled(true) : setScrolled(false)
+    window.scrollY >= 1 ? setScrolled(true) : setScrolled(false)
   }
 
   window.addEventListener('scroll', changeHeaderBackground)
