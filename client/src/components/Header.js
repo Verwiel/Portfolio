@@ -19,11 +19,13 @@ const Header = () => {
   }, [location])
 
   return (
-    <header className={scrolled || activeNav ? 'global-header active-header' : 'global-header'}>
+    <header className={activeNav || scrolled ? 'global-header active-header' : 'global-header'}>
       <div className='global-header-content'>
         <Link to='/' className='global-header-content-logo'>
           <img src={Logo} alt='Drew Verwiel Logo' />
-          {activeNav && <h1>Drew Verwiel</h1>}
+          {activeNav || scrolled && 
+            <h1>Drew Verwiel</h1>
+          }
         </Link>
 
         <Navbar />
