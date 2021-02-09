@@ -1,10 +1,9 @@
 .portfolio {
     @include pageWrap;
-    background-color: $light-background;
     h1 {
         margin: 0;
         padding: 20px;
         color: white;
-        background-color: $brown;
+        background-color: $light-background;
     }
 }

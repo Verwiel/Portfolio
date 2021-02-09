@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import { Link, useLocation } from 'react-router-dom'
 import Navbar from './Navbar'
 import Logo from '../assets/logo.png'
@@ -6,7 +6,7 @@ import Logo from '../assets/logo.png'
 const Header = () => {
   const [scrolled, setScrolled] = useState(false)
   const location = useLocation()
-  const activeNav = location.pathname.length > 1
+  const activeNav = location.pathname !== '/' && location.pathname !== '/about'
 
   const changeHeaderBackground = () => {
     window.scrollY >= 1 ? setScrolled(true) : setScrolled(false)
@@ -14,8 +14,12 @@ const Header = () => {
 
   window.addEventListener('scroll', changeHeaderBackground)
 
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [location])
+
   return (
-    <header className={scrolled ? 'global-header active-header' : 'global-header'}>
+    <header className={scrolled || activeNav ? 'global-header active-header' : 'global-header'}>
       <div className='global-header-content'>
         <Link to='/' className='global-header-content-logo'>
           <img src={Logo} alt='Drew Verwiel Logo' />
