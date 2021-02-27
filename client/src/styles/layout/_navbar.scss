@@ -9,25 +9,28 @@
   }
 
   &-item {
-    @include white-link-hover;
+    @include link-hover;
     font-weight: bold;
     &-wrap {
       margin: 0 50px 0 0;
       li {
-        padding: 10px;
+        padding: 5px 10px;
+        a {
+          padding: 5px 0;
+        }
       }
     }
     &:hover {
-      border-bottom: 1px solid $sand;
+      border-bottom: 1px solid $accent;
     }
     &-active {
-      color: $sand;
-      border-bottom: 1px solid $sand;
+      color: $accent;
+      border-bottom: 1px solid $accent;
     }
   }
 
   &-icon {
-    @include white-link-hover;
+    @include link-hover;
     font-size: 25px;
     &-wrap {
       margin: 0;
@@ -47,7 +50,7 @@
       top: 0;
       bottom: auto;
       width: 100vw;
-      background-color: $dark-background;
+      background-color: $background;
       margin: 0;
       z-index: 1;
     }
@@ -56,7 +59,7 @@
       align-self: flex-end;
       font-size: 25px;
       padding: 10px;
-      color: $sand;
+      color: $accent;
     }
 
     .close-icon {
@@ -68,7 +71,7 @@
       &-wrap {
         display: flex;
         flex-direction: column;
-        margin: 5px 0 0 0;
+        margin: 10px 0 0 0;
         li {
           font-size: 18px;
         }
@@ -84,8 +87,8 @@
     &-icon {
       margin: 5px;
       &-wrap {
-        border-top: 1px solid $blue-accent;
-        margin: 0;
+        border-top: 1px solid $font;
+        margin: 10px 0 0 0;
         li {
           padding: 10px 5px 0px 5px;
         }

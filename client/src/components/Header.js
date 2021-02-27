@@ -6,7 +6,7 @@ import Logo from '../assets/logo.png'
 const Header = () => {
   const [scrolled, setScrolled] = useState(false)
   const location = useLocation()
-  const activeNav = location.pathname !== '/' && location.pathname !== '/about'
+  const showName = location.pathname !== '/' && location.pathname !== '/about'
 
   const changeHeaderBackground = () => {
     window.scrollY >= 1 ? setScrolled(true) : setScrolled(false)
@@ -19,12 +19,12 @@ const Header = () => {
   }, [location])
 
   return (
-    <header className={activeNav || scrolled ? 'global-header active-header' : 'global-header'}>
+    <header className={scrolled ? 'global-header active-header' : 'global-header'}>
       <div className='global-header-content'>
         <Link to='/' className='global-header-content-logo'>
           <img src={Logo} alt='Drew Verwiel Logo' />
-          {activeNav || scrolled && 
-            <h1>Drew Verwiel</h1>
+          {(showName || scrolled) && 
+            <h1 className='fade-in'>Drew Verwiel</h1>
           }
         </Link>
 

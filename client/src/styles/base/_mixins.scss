@@ -10,12 +10,12 @@
   left: 0;
 }
 
-@mixin white-link-hover {
-  color: white;
+@mixin link-hover {
+  color: $font;
   text-decoration: none;
   transition: all .3s ease-in-out;
   &:hover {
-    color: $sand;
+    color: $accent;
   }
 }
 
@@ -29,4 +29,12 @@
     padding-top: 50px;
     min-height: calc(100vh - 70px);
   }
+}
+
+@mixin fade-in {
+  animation: fadeIn ease 1s;
+  -webkit-animation: fadeIn ease 1s;
+  -moz-animation: fadeIn ease 1s;
+  -o-animation: fadeIn ease 1s;
+  -ms-animation: fadeIn ease 1s;
 }
