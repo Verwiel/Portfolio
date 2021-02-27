@@ -1,32 +1,10 @@
 .home {
-  display: flex;
-  justify-content: center;
-  background-repeat: no-repeat;
-  background-size: auto;
-  background-position: center;
-  background-color: $background;
-
-  &-content {
-    &-name {
-      display: flex;
-      justify-content: center;
-      font-size: 32px;
-      margin-top: 20px;
-      
-      &-first {
-        color: $accent;
-        margin: 0;
-      }
-      &-last {
-        color: $font;
-        margin: 0 0 0 10px;
-      }
-    }
-
-    &-title {
-      font-size: 22px;
-      color: $font;
-    }
+  h1 {
+    color: $accent;
+  }
+  p {
+    font-size: 22px;
+    color: $font;
   }
 }
 
