@@ -1,4 +1,13 @@
 .contact {
-    @include pageWrap;
-    
+    display: flex;
+    article {
+        h1 {
+            margin: 0;
+            padding: 20px 0;
+            color: $font-bright;
+        }
+        p, a {
+            color: $font;
+        }
+    }
 }

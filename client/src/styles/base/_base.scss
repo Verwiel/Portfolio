@@ -13,6 +13,17 @@ code {
 }
 
 .App {
+  display: flex;
+  justify-content: center;
   text-align: center;
   background-color: $background;
+  max-width: 80vw;
+  min-height: calc(100vh - 95px);
+  height: 100%;
+  width: 100%;
+  padding: 75px 10vw 20px 10vw;
+  @media (max-width: 767px){
+    padding-top: 50px;
+    min-height: calc(100vh - 70px);
+  }
 }

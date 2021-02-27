@@ -1,19 +1,36 @@
 import React from 'react'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import socialLinks from '../data/socialNav.json'
 
 const Contact = () => {
-  return (
-    <div className='contact'>
-      <h1>Contact</h1>
-      <h2>Interested in hiring?</h2>
-      <p>Download My Resume</p>
-      <h2>Social Media</h2>
-      <p>Github</p>
-      <p>LinkedIn</p>
-      <h2>Send me an email</h2>
-      <p>email address mailto:</p>
+  const socialLinksMap = socialLinks.map((link, i) => (
+    <li key={i} style={{display: i === 2 && 'none'}}>
+      <span>
+        <a href={link.route} target='_blank' rel='noopener noreferrer'>
+          <FontAwesomeIcon icon={[`${link.type}`, `${link.icon}`]} />
+        </a>
+        <p>{link.message}</p>
+      </span>
+    </li>
+  ))
 
-      <h2>I look forward to hearing from you!</h2>
-    </div>
+  return (
+    <main className='contact'>
+      <article>
+        <h1>Contact Me</h1>
+        <p>Open to opportunities</p>
+
+        <ul>
+          {socialLinksMap}
+        </ul>
+        <a>
+          <button>Hit me up</button>
+        </a>
+      </article>
+
+      <img src='' alt='' />
+      
+    </main>
   )
 }
 

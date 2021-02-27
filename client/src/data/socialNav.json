@@ -2,12 +2,14 @@
   {
     "icon": "github",
     "type": "fab",
-    "route": "https://github.com/Verwiel"
+    "route": "https://github.com/Verwiel",
+    "message": "Check out my work on Github"
   },
   {
     "icon": "linkedin",
     "type": "fab",
-    "route": "https://www.linkedin.com/in/drew-verwiel"
+    "route": "https://www.linkedin.com/in/drew-verwiel",
+    "message": "Connect with me on LinkedIn"
   },
   {
     "icon": "envelope",
