@@ -6,7 +6,7 @@ const Contact = () => {
   const socialLinksMap = socialLinks.map((link, i) => (
     <li key={i} style={{display: i === 2 && 'none'}}>
       <span>
-        <a href={link.route} target='_blank' rel='noopener noreferrer'>
+        <a href={link.route} className='contact-icon' target='_blank' rel='noopener noreferrer'>
           <FontAwesomeIcon icon={[`${link.type}`, `${link.icon}`]} />
         </a>
         <p>{link.message}</p>
@@ -24,12 +24,11 @@ const Contact = () => {
           {socialLinksMap}
         </ul>
         <a>
-          <button>Hit me up</button>
+          <button className='btn-green'>Hit me up</button>
         </a>
       </article>
 
       <img src='' alt='' />
-      
     </main>
   )
 }
