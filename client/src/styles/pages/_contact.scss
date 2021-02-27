@@ -1,6 +1,6 @@
 .contact {
+    @include pageWrap;
     display: flex;
-    width: 80vw;
     article {
         text-align: left;
         h1 {
