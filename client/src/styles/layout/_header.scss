@@ -13,7 +13,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 1160px;
+    max-width: 1160px;
+    width: calc(100% - 40px);
     padding: 0 20px;
 
     &-logo {

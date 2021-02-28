@@ -13,13 +13,6 @@ code {
 }
 
 .App {
-  display: flex;
-  justify-content: center;
   text-align: center;
   background-color: $background;
-  width: 100vw;
-  @media (max-width: 767px){
-    padding-top: 50px;
-    min-height: calc(100vh - 70px);
-  }
 }
