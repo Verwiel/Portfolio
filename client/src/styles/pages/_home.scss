@@ -22,4 +22,42 @@
       }
     }
   }
+  &-about {
+    display: flex;
+    flex-direction: column;
+    background-image: url('../../assets/section_drawing_bottom.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center bottom;
+    height: 500px;
+  }
+  &-projects {
+    height: 500px;
+    h2 {
+      color: $font-bright;
+    }
+  }
+  &-contact {
+    display: flex;
+    flex-direction: column;
+    background-image: url('../../assets/section_drawing_top.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center bottom;
+    height: 500px;
+    padding-top: 75px;
+  }
+}
+
+@media (max-width: 768px){
+  .home {
+    &-hero {
+      &-content {
+        margin-top: 30px;
+        h1 {
+          font-size: 45px;
+        }
+      }
+    }
+  }
 }
