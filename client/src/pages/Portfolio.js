@@ -4,7 +4,7 @@ import Technologies from '../components/Technologies'
 
 const Portfolio = () => {
   return (
-    <div className='portfolio'>
+    <div className='portfolio full-page'>
       <h1 id='projects'>Portfolio</h1>
       <ProjectList />
       <Technologies /> 

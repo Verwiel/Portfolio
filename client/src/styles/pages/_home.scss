@@ -1,6 +1,11 @@
 .home {
+  h2 {
+    color: $font-bright;
+  }
+  p {
+    color: $font;
+  }
   &-hero {
-    @include pageWrap;
     display: flex;
     flex-direction: column;
     background-image: url('../../assets/background_drawing.svg');
@@ -8,44 +13,36 @@
     background-size: cover;
     background-position: center bottom;
     &-content {
-      max-width: 400px;
       text-align: left;
       margin-top: 100px;
       h1 {
         font-size: 60px;
-        margin-top: 20px;
+        margin: 10px 0;
         color: $accent;
+        span {
+          color: $font-bright;
+        }
       }
       p {
         font-size: 22px;
-        color: $accent;
+        color: $font-bright;
+        margin: 0;
+      }
+      h3 {
+        display: flex;
+        font-size: 22px;
+        color: $font;
       }
     }
   }
   &-about {
-    display: flex;
-    flex-direction: column;
-    background-image: url('../../assets/section_drawing_bottom.svg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center bottom;
-    height: 500px;
+
   }
   &-projects {
-    height: 500px;
-    h2 {
-      color: $font-bright;
-    }
+
   }
   &-contact {
-    display: flex;
-    flex-direction: column;
-    background-image: url('../../assets/section_drawing_top.svg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center bottom;
-    height: 500px;
-    padding-top: 75px;
+
   }
 }
 

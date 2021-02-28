@@ -3,6 +3,7 @@
   padding: 10px 20px;
   color: $accent;
   border: 1px solid $accent;
+  border-radius: 20px;
   &:hover,:focus {
     background-color: rgba(0, 230, 150, 0.1);
   }

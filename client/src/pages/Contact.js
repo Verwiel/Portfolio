@@ -15,7 +15,7 @@ const Contact = () => {
   ))
 
   return (
-    <main className='contact'>
+    <main className='contact full-page'>
       <article>
         <h1>Contact Me</h1>
         <p>Open to opportunities</p>

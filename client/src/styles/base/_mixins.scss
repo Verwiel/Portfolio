@@ -19,16 +19,6 @@
   }
 }
 
-@mixin pageWrap {
-  max-width: 80vw;
-  min-height: calc(100vh - 95px);
-  padding: 75px 10vw 20px 10vw;
-  @media (max-width: 767px){
-    padding-top: 50px;
-    min-height: calc(100vh - 70px);
-  }
-}
-
 @mixin fade-in {
   animation: fadeIn ease 1s;
   -webkit-animation: fadeIn ease 1s;

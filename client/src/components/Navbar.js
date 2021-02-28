@@ -1,5 +1,6 @@
 import React, { useRef, useState } from 'react'
 import { NavLink } from 'react-router-dom'
+import { NavHashLink } from 'react-router-hash-link'
 import useWindowDimensions from '../hooks/useWindowDimensions'
 import useOutsideClick from '../hooks/useOutsideClick'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -15,13 +16,38 @@ const Navbar = () => {
 
   const internalLinksMap = internalLinks.map(link => (
     <li key={link.name}>
-      <NavLink to={link.route} className='navbar-item' activeClassName='navbar-item-active' onClick={() => setNavOpen(false)}>{link.name}</NavLink>
+      {link.name !== 'Contact' ?
+      <NavLink 
+        to={link.route} 
+        className='navbar-item' 
+        activeClassName='navbar-item-active'
+        onClick={() => setNavOpen(false)}
+      >
+        {link.name}
+      
+      </NavLink>
+      :
+      <NavHashLink 
+        to={link.route} 
+        className='navbar-item' 
+        activeClassName='navbar-item-active' 
+        onClick={() => setNavOpen(false)}
+      >
+        {link.name}
+      </NavHashLink>
+      }
     </li>
   ))
 
   const socialLinksMap = socialLinks.map((link, i) => (
     <li key={i}>
-      <a href={link.route} className='navbar-icon' target={i < 2 ? '_blank' : ''} rel={i < 2 ? 'noopener noreferrer' : ''} onClick={() => setNavOpen(false)}>
+      <a 
+        href={link.route} 
+        className='navbar-icon' 
+        target={i < 2 ? '_blank' : ''} 
+        rel={i < 2 ? 'noopener noreferrer' : ''} 
+        onClick={() => setNavOpen(false)}
+      >
         <FontAwesomeIcon icon={[`${link.type}`, `${link.icon}`]} />
       </a>
     </li>

@@ -15,7 +15,7 @@ const Header = () => {
   window.addEventListener('scroll', changeHeaderBackground)
 
   useEffect(() => {
-    window.scrollTo(0, 0)
+    !location.hash && window.scrollTo(0, 0)
   }, [location])
 
   return (
