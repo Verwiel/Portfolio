@@ -22,18 +22,31 @@ const Home = () => {
     window.scrollTo({ behavior: 'smooth', top: ref.current.offsetTop })
   }
 
+  function heroNavigate(){
+    navigate('/#hero', homeRef)
+  }
+  function aboutNavigate(){
+    navigate('/#about', aboutRef)
+  }
+  function projectsNavigate(){
+    navigate('/#projects', projectsRef)
+  }
+  function contactNavigate(){
+    navigate('/#contact', contactRef)
+  }
+
   function scrollNavigation(e){
     if (e.deltaY < 0){
       // If scrolled up
       switch(location.hash){
         case '#about':
-          navigate('/#hero', homeRef)
+          heroNavigate()
           break;
         case '#projects':
-          navigate('/#about', aboutRef)
+          aboutNavigate()
           break;
         case '#contact':
-          navigate('/#projects', projectsRef)
+          projectsNavigate()
           break;
         default:
           break;
@@ -42,16 +55,16 @@ const Home = () => {
       // if scrolled down
       switch(location.hash){
         case '':
-          navigate('/#about', aboutRef)
+          aboutNavigate()
           break;
         case '#hero':
-          navigate('/#about', aboutRef)
+          aboutNavigate()
           break;
         case '#about':
-          navigate('/#projects', projectsRef)
+          projectsNavigate()
           break;
         case '#projects':
-          navigate('/#contact', contactRef)
+          contactNavigate()
           break;
         default:
           break;
@@ -63,7 +76,14 @@ const Home = () => {
   return (
     <main className='home' onWheel={(e) => scrollNavigation(e)}>
       <SideNav />
-      <header id='hero' className='home-hero full-page' ref={homeRef}>
+      <header 
+        id='hero' 
+        className='home-hero full-page' 
+        ref={homeRef}
+        onTouchStart={(e) => handleTouchStart(e)} 
+        onTouchMove={(e) => handleTouchMove(e)} 
+        onTouchEnd={() => handleTouchEnd(heroNavigate, aboutNavigate)}
+      >
         <div className='home-hero-content'>
           <p>Hey, my name is</p>
           <h1>D<span>rew </span>V<span>erwiel</span></h1>
@@ -75,14 +95,26 @@ const Home = () => {
         ref={aboutRef} 
         onTouchStart={(e) => handleTouchStart(e)} 
         onTouchMove={(e) => handleTouchMove(e)} 
-        onTouchEnd={() => handleTouchEnd(navigate('/#hero', homeRef), navigate('/#projects', projectsRef))}
+        onTouchEnd={() => handleTouchEnd(heroNavigate, projectsNavigate)}
       >
         <AboutMeSection  />
       </div>
-      <div ref={projectsRef}>
+
+      <div 
+        ref={projectsRef}
+        onTouchStart={(e) => handleTouchStart(e)} 
+        onTouchMove={(e) => handleTouchMove(e)} 
+        onTouchEnd={() => handleTouchEnd(aboutNavigate, contactNavigate)}
+      >
         <ProjectsSection  />
       </div>
-      <div ref={contactRef}>
+
+      <div 
+        ref={contactRef}
+        onTouchStart={(e) => handleTouchStart(e)} 
+        onTouchMove={(e) => handleTouchMove(e)} 
+        onTouchEnd={() => handleTouchEnd(projectsNavigate, contactNavigate)}
+      >
         <ContactSection  />
       </div>
     </main>
