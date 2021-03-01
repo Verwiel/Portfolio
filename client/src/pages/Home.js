@@ -1,4 +1,4 @@
-import React, { useRef } from 'react'
+import React, { useRef, useState } from 'react'
 import { useLocation, useHistory } from 'react-router-dom'
 import { useLockBodyScroll } from '../hooks/useLockBodyScroll'
 import { useSwipe } from '../hooks/useSwipe'
@@ -8,6 +8,7 @@ import ProjectsSection from '../components/ProjectsSection'
 import ContactSection from '../components/ContactSection'
 
 const Home = () => { 
+  const [wheelEnabled, setWheelEnabled] = useState(true)
   const location = useLocation()
   const history = useHistory()
   const homeRef = useRef()
@@ -20,6 +21,7 @@ const Home = () => {
   function navigate(location, ref){
     history.push(location)
     window.scrollTo({ behavior: 'smooth', top: ref.current.offsetTop })
+    disableWheel()
   }
 
   function heroNavigate(){
@@ -35,8 +37,20 @@ const Home = () => {
     navigate('/#contact', contactRef)
   }
 
+  // Set time out to avoid scrolling all the way to the bottom onWheel
+  function disableWheel() {
+    // temporarily disable action
+    setWheelEnabled(false)
+
+    // set a timer to enable again it 1 second from now
+    setTimeout(function() {
+      setWheelEnabled(true);
+    }, 500);
+}
+
   function scrollNavigation(e){
-    if (e.deltaY < 0){
+
+    if ((e.deltaY < 0 && wheelEnabled)){
       // If scrolled up
       switch(location.hash){
         case '#about':
@@ -51,7 +65,7 @@ const Home = () => {
         default:
           break;
       }
-    } else if (e.deltaY > 0){
+    } else if ((e.deltaY > 0 && wheelEnabled)){
       // if scrolled down
       switch(location.hash){
         case '':
@@ -74,7 +88,7 @@ const Home = () => {
 
 
   return (
-    <main className='home' onWheel={(e) => scrollNavigation(e)}>
+    <main className='home' onWheel={(e) => scrollNavigation(e)} >
       <SideNav />
       <header 
         id='hero' 
