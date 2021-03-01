@@ -1,0 +1,45 @@
+.hamburger {
+  button {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 2rem;
+    height: 2rem;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    z-index: 1;
+    &:focus {
+      outline: none;
+    }
+
+    div {
+      width: 2rem;
+      height: 0.25rem;
+      background: $accent;
+      border-radius: 10px;
+      transition: all 0.3s linear;
+      position: relative;
+      transform-origin: 1px;
+    }
+  }
+
+  nav {
+    @include flex-center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: $background;
+    text-align: left;
+    padding: 0 2rem 2rem 2rem;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: calc(100vw - 64px);
+    transition: transform 0.3s ease-in-out;
+  }
+}

@@ -43,35 +43,6 @@
 
 @media (max-width: 767px){
   .navbar {
-    &-hamburger {
-      @include flex-center;
-      @include fix-vertical;
-      flex-direction: column;
-      top: 0;
-      bottom: auto;
-      width: 100vw;
-      padding: 15px 0;
-      background-color: $background;
-      margin: 0;
-      z-index: 1;
-      box-shadow: 0 10px 30px -10px $background-shadow;
-    }
-
-    .open-icon, .close-icon {
-      align-self: flex-end;
-      font-size: 25px;
-      padding: 10px;
-      color: $accent;
-    }
-
-    .close-icon {
-      position: absolute;
-      top: 12px;
-      right: 10px;
-      padding-top: 0;
-      margin-right: 20px;
-    }
-  
     &-item {
       &-wrap {
         display: flex;
