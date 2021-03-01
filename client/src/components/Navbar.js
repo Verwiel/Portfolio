@@ -42,12 +42,11 @@ const Navbar = () => {
   const socialLinksMap = socialLinks.map((link, i) => (
     <li key={i}>
       <a 
-        href={link.route} 
-        className='navbar-icon' 
-        target={i < 2 ? '_blank' : ''} 
-        rel={i < 2 ? 'noopener noreferrer' : ''} 
-        onClick={() => setNavOpen(false)}
-      >
+      href={link.route} 
+      className='navbar-icon' 
+      target={i < 2 ? '_blank' : ''} 
+      rel={i < 2 ? 'noopener noreferrer' : ''} 
+      onClick={() => setNavOpen(false)}>
         <FontAwesomeIcon icon={[`${link.type}`, `${link.icon}`]} />
       </a>
     </li>
