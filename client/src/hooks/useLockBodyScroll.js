@@ -1,6 +1,6 @@
 import { useLayoutEffect } from 'react'
 
-export default function useLockBodyScroll() {
+export function useLockBodyScroll() {
   useLayoutEffect(() => {
     // Get original value of body overflow
     const originalStyle = window.getComputedStyle(document.body).overflow 

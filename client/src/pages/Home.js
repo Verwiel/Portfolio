@@ -1,6 +1,7 @@
 import React, { useRef } from 'react'
-import useLockBodyScroll from '../hooks/useLockBodyScroll'
 import { useLocation, useHistory } from 'react-router-dom'
+import { useLockBodyScroll } from '../hooks/useLockBodyScroll'
+import { useSwipe } from '../hooks/useSwipe'
 import SideNav from '../components/SideNav'
 import AboutMeSection from '../components/AboutMeSection'
 import ProjectsSection from '../components/ProjectsSection'
@@ -14,22 +15,25 @@ const Home = () => {
   const projectsRef = useRef()
   const contactRef = useRef()
   useLockBodyScroll()
+  const [handleTouchStart, handleTouchMove, handleTouchEnd] = useSwipe() 
+
+  function navigate(location, ref){
+    history.push(location)
+    window.scrollTo({ behavior: 'smooth', top: ref.current.offsetTop })
+  }
 
   function scrollNavigation(e){
     if (e.deltaY < 0){
       // If scrolled up
       switch(location.hash){
         case '#about':
-          history.push('/#hero')
-          window.scrollTo({ behavior: 'smooth', top: homeRef.current.offsetTop })
+          navigate('/#hero', homeRef)
           break;
         case '#projects':
-          history.push('/#about')
-          window.scrollTo({ behavior: 'smooth', top: aboutRef.current.offsetTop })
+          navigate('/#about', aboutRef)
           break;
         case '#contact':
-          history.push('/#projects')
-          window.scrollTo({ behavior: 'smooth', top: projectsRef.current.offsetTop })
+          navigate('/#projects', projectsRef)
           break;
         default:
           break;
@@ -38,20 +42,16 @@ const Home = () => {
       // if scrolled down
       switch(location.hash){
         case '':
-          history.push('/#about')
-          window.scrollTo({ behavior: 'smooth', top: aboutRef.current.offsetTop })
+          navigate('/#about', aboutRef)
           break;
         case '#hero':
-          history.push('/#about')
-          window.scrollTo({ behavior: 'smooth', top: aboutRef.current.offsetTop })
+          navigate('/#about', aboutRef)
           break;
         case '#about':
-          history.push('/#projects')
-          window.scrollTo({ behavior: 'smooth', top: projectsRef.current.offsetTop })
+          navigate('/#projects', projectsRef)
           break;
         case '#projects':
-          history.push('/#contact')
-          window.scrollTo({ behavior: 'smooth', top: contactRef.current.offsetTop })
+          navigate('/#contact', contactRef)
           break;
         default:
           break;
@@ -71,7 +71,12 @@ const Home = () => {
         </div>
       </header>
 
-      <div ref={aboutRef}>
+      <div 
+        ref={aboutRef} 
+        onTouchStart={(e) => handleTouchStart(e)} 
+        onTouchMove={(e) => handleTouchMove(e)} 
+        onTouchEnd={() => handleTouchEnd(navigate('/#hero', homeRef), navigate('/#projects', projectsRef))}
+      >
         <AboutMeSection  />
       </div>
       <div ref={projectsRef}>
