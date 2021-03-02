@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const AboutMeSection = () => {
   return (
@@ -9,7 +10,9 @@ const AboutMeSection = () => {
           <p>Hey, my name is Drew Verwiel and I'm a fullstack Developer based out of Salt Lake City, Utah.</p>
           <p>I am currently working for InsideOut Development as a Application Developer. My days consist mostly of building and helping our main website and communities in MySQL, Express, React, and Node.</p>
           <p>I'm originally from Oshkosh, Wisconsin. Some of my hobbies include: Snowboarding/Skateboarding, Camping, Hiking, and Brewing.</p>
-          <button className='btn-green'>Want to learn more?</button>
+          <Link to='/about'>
+            <button className='btn-green'>Want to learn more?</button>
+          </Link>
         </section>
       </div>
       <img src='' alt='placeholder' />

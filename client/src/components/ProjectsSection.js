@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const ProjectsSection = () => {
   const testData = [
@@ -94,7 +95,9 @@ const ProjectsSection = () => {
           {projectMap}
         </ul>
       </section>
-      <button className='btn-green'>See more projects</button>
+      <Link to='/portfolio'>
+        <button className='btn-green'>See more projects</button>
+      </Link>
     </article>
   )
 }
