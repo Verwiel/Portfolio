@@ -1,8 +1,7 @@
 import React from 'react'
 import { NavHashLink } from 'react-router-hash-link'
 
-const SideNav = () => {
-
+const SideNav = ({ location }) => {
   const samePageNavigation = [
     "#hero",
     "#about",
@@ -13,7 +12,13 @@ const SideNav = () => {
   const navMap = samePageNavigation.map((nav, i) => {
     return (
       <li key={i}>
-        <NavHashLink to={nav} smooth className='side-link' activeClassName="side-link-active">&nbsp;
+        <NavHashLink 
+          to={nav}
+          smooth 
+          className={location.hash.length < 1 && i === 0 ? 'side-link-active' : 'side-link'} 
+          activeClassName='side-link-active'
+        >
+          &nbsp;
         </NavHashLink>
       </li>
     )

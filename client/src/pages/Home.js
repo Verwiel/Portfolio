@@ -89,7 +89,7 @@ const Home = () => {
 
   return (
     <main className='home' onWheel={(e) => scrollNavigation(e)} >
-      <SideNav />
+      <SideNav location={location} />
       <header 
         id='hero' 
         className='home-hero full-page' 

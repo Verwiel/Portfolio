@@ -36,6 +36,13 @@
       background-color: $font-bright;
     }
     &-active {
+      display: block;
+      position: relative;
+      height: 8px;
+      background-color: $font;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: width .3s;
       width: 100%;
       background-color: $font-bright;
     }
