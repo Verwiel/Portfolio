@@ -1,14 +1,23 @@
 .full-page {
   max-width: 80vw;
-  min-height: calc(100vh - 95px);
-  padding: 75px 10vw 20px 10vw;
+  min-height: calc(100vh - 150px);
+  padding: 75px 10vw;
   @media (max-width: 767px){
-    padding-top: 60px;
-    min-height: calc(100vh - 80px);
+    padding: 60px 10vw;
+    min-height: calc(100vh - 120px);
   }
 }
 
-.section-split {
+.homepage-section {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
+  h2 {
+    font-size: 45px;
+    margin: 0 0 10px 0;
+  }
+  article {
+    width: 100%;
+    text-align: left;
+  }
 }

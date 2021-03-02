@@ -36,7 +36,14 @@
     }
   }
   &-about {
-
+    display: flex;
+    justify-content: space-between;
+    &-column-text {
+      padding: 0 65px;
+      button {
+        margin-top: 20px; 
+      }
+    }
   }
   &-projects {
 

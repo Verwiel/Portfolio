@@ -2,7 +2,7 @@ import React from 'react'
 
 const ContactSection = () => {
   return (
-    <article id='contact' className='home-contact full-page'>
+    <article id='contact' className='home-contact'>
       <h2>Contact</h2>
       <p>Blah Blah Blah</p>
       <ul>

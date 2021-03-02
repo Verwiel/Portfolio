@@ -2,7 +2,7 @@ import React from 'react'
 
 const ProjectsSection = () => {
   return (
-    <article id='projects' className='home-projects full-page'>
+    <article id='projects' className='home-projects'>
       <h2>Projects</h2>
       <section>
         <ul>

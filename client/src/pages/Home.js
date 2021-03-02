@@ -106,6 +106,7 @@ const Home = () => {
       </header>
 
       <div 
+        className='full-page homepage-section'
         ref={aboutRef} 
         onTouchStart={(e) => handleTouchStart(e)} 
         onTouchMove={(e) => handleTouchMove(e)} 
@@ -114,7 +115,8 @@ const Home = () => {
         <AboutMeSection  />
       </div>
 
-      <div 
+      <div
+        className='full-page homepage-section'
         ref={projectsRef}
         onTouchStart={(e) => handleTouchStart(e)} 
         onTouchMove={(e) => handleTouchMove(e)} 
@@ -123,7 +125,8 @@ const Home = () => {
         <ProjectsSection  />
       </div>
 
-      <div 
+      <div
+        className='full-page homepage-section'
         ref={contactRef}
         onTouchStart={(e) => handleTouchStart(e)} 
         onTouchMove={(e) => handleTouchMove(e)} 
