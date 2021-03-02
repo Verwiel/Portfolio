@@ -4,7 +4,6 @@ import Header from './components/Header'
 import Home from './pages/Home'
 import About from './pages/About'
 import Portfolio from './pages/Portfolio'
-import Contact from './pages/Contact'
 // Font Awesome
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { fab } from '@fortawesome/free-brands-svg-icons'
@@ -19,10 +18,9 @@ function App() {
         <Route exact path="/" component={Home} />
         <Route path="/about" component={About} />
         <Route path="/portfolio" component={Portfolio} />
-        <Route path="/contact" component={Contact} />
       </Switch>
     </div>
-  );
+  )
 }
 
 export default App

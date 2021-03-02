@@ -3,7 +3,7 @@ import React from 'react'
 const AboutMeSection = () => {
   return (
     <article id='about' className='home-about'>
-      <div className='home-about-column-text'>
+      <div className='text-column'>
         <h2>About Me</h2>
         <section>
           <p>Hey, my name is Drew Verwiel and I'm a fullstack Developer based out of Salt Lake City, Utah.</p>

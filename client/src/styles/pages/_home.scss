@@ -38,18 +38,26 @@
   &-about {
     display: flex;
     justify-content: space-between;
-    &-column-text {
-      padding: 0 65px;
-      button {
-        margin-top: 20px; 
-      }
-    }
   }
   &-projects {
-
+    // display: flex;
+    // flex-direction: column;
+    padding: 0 65px;
   }
   &-contact {
-
+    display: flex;
+    justify-content: space-between;
+    ul {
+      display: flex;
+      list-style: none;
+      padding: 0;
+      margin: 20px 0 10px 0;
+      a {
+        font-size: 35px;
+        width: auto;
+        margin-right: 20px;
+      }
+    }
   }
 }
 
