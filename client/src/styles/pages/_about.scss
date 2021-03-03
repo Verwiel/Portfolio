@@ -26,6 +26,7 @@
 
 @media (max-width: $breakpoint-tablet){
     .about {
+        padding: 60px 10vw;
         &-header {
             height: 200px;
             margin-top: 50px;
@@ -40,6 +41,7 @@
 
 @media (max-width: $breakpoint-mobile){
     .about {
+        padding: 60px 5vw;
         &-header {
             &-content {
                 display: flex;
