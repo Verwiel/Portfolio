@@ -17,15 +17,19 @@ const Home = () => {
   const contactRef = useRef()
   useLockBodyScroll()
   const [handleTouchStart, handleTouchMove, handleTouchEnd] = useSwipe() 
+  let timer = 500
 
   function navigate(destination, ref){
     history.push(destination)
     window.scrollTo({ behavior: 'smooth', top: ref.current.offsetTop })
-    // Set time out to avoid scrolling all the way to the bottom onWheel
-    setWheelEnabled(false)
-    setTimeout(function() {
-      setWheelEnabled(true)
-    }, 500)
+    // Set time out to avoid scrolling all the way to the bottom onWheel,
+    // timer check is to avoid memory leaks
+    if(timer > 0){
+      setWheelEnabled(false)
+      setTimeout(function() {
+        setWheelEnabled(true)
+      }, timer)
+    }
   }
 
   function heroNavigate(){
@@ -98,6 +102,7 @@ const Home = () => {
       default:
         break;
     }
+    return () => timer = 0
   }, [])
 
   return (
