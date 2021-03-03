@@ -16,7 +16,7 @@ const Header = () => {
 
   useEffect(() => {
     !location.hash && window.scrollTo(0, 0)
-  }, [location])
+  }, [location.pathname])
 
   return (
     <header className={scrolled ? 'global-header active-header' : 'global-header'}>

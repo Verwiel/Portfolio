@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react'
+import React, { useRef, useState, useEffect } from 'react'
 import { useLocation, useHistory } from 'react-router-dom'
 import { useLockBodyScroll } from '../hooks/useLockBodyScroll'
 import { useSwipe } from '../hooks/useSwipe'
@@ -18,10 +18,14 @@ const Home = () => {
   useLockBodyScroll()
   const [handleTouchStart, handleTouchMove, handleTouchEnd] = useSwipe() 
 
-  function navigate(location, ref){
-    history.push(location)
+  function navigate(destination, ref){
+    history.push(destination)
     window.scrollTo({ behavior: 'smooth', top: ref.current.offsetTop })
-    disableWheel()
+    // Set time out to avoid scrolling all the way to the bottom onWheel
+    setWheelEnabled(false)
+    setTimeout(function() {
+      setWheelEnabled(true)
+    }, 500)
   }
 
   function heroNavigate(){
@@ -37,19 +41,7 @@ const Home = () => {
     navigate('/#contact', contactRef)
   }
 
-  // Set time out to avoid scrolling all the way to the bottom onWheel
-  function disableWheel() {
-    // temporarily disable action
-    setWheelEnabled(false)
-
-    // set a timer to enable again it 1 second from now
-    setTimeout(function() {
-      setWheelEnabled(true);
-    }, 500);
-}
-
   function scrollNavigation(e){
-
     if ((e.deltaY < 0 && wheelEnabled)){
       // If scrolled up
       switch(location.hash){
@@ -86,6 +78,27 @@ const Home = () => {
     }
   }
 
+  useEffect(() => {
+    switch(location.hash){
+      case '':
+        heroNavigate()
+        break;
+      case '#hero':
+        heroNavigate()
+        break;
+      case '#about':
+        aboutNavigate()
+        break;
+      case '#projects':
+        projectsNavigate()
+        break;
+      case '#contact':
+        contactNavigate()
+        break;
+      default:
+        break;
+    }
+  }, [])
 
   return (
     <main className='home' onWheel={(e) => scrollNavigation(e)} >
