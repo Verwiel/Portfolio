@@ -56,7 +56,7 @@ const Navbar = () => {
 
   return (
     <>
-      {width >= 768 ?
+      {width > 825 ?
         <nav className='navbar'>
           <ul className='navbar-item-wrap'>
             {internalLinksMap}

@@ -44,19 +44,7 @@
     }
 }
 
-@media (max-width: 768px){
-    .about {
-        &-header {
-            height: 300px;
-            &-content {
-                width: auto;
-
-            }
-        }
-    }
-}
-
-@media (max-width: 767px){
+@media (max-width: 825px){
     .about {
         &-header {
             height: 200px;

@@ -2,10 +2,6 @@
   max-width: 80vw;
   min-height: calc(100vh - 150px);
   padding: 75px 10vw;
-  @media (max-width: 767px){
-    padding: 60px 10vw;
-    min-height: calc(100vh - 120px);
-  }
 }
 
 .homepage-section {
@@ -23,7 +19,26 @@
   button {
     margin-top: 20px; 
   }
+  img {
+    margin: 0 65px;
+  }
   .text-column {
     padding: 0 65px;
+  }
+}
+
+@media (max-width: 825px){
+  .full-page {
+    max-width: 90vw;
+    padding: 60px 5vw;
+    min-height: calc(100vh - 120px);
+  }
+  .homepage-section {
+    img {
+      margin: 0 45px 20px 45px;
+    }
+    .text-column {
+      padding: 0 45px;
+    }
   }
 }
