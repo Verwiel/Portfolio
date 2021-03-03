@@ -20,7 +20,9 @@
     margin-top: 20px; 
   }
   img {
-    margin: 0 65px;
+    margin: 0px;
+    max-width: 40%;
+    max-height: 50vh;
   }
   .text-column {
     padding: 0 65px;
@@ -36,6 +38,7 @@
   .homepage-section {
     img {
       margin: 0 45px 20px 45px;
+      max-width: 85%;
     }
     .text-column {
       padding: 0 45px;
@@ -52,6 +55,7 @@
   .homepage-section {
     img {
       margin: 0 0 20px 0;
+      max-width: 95%;
     }
     .text-column {
       padding: 0;

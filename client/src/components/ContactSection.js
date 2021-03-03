@@ -1,6 +1,7 @@
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import socialLinks from '../data/socialNav.json'
+import ContactImage from '../assets/capitol-reef-image.svg'
 
 const ContactSection = () => {
 
@@ -22,7 +23,7 @@ const ContactSection = () => {
         </ul>
         <button className='btn-green'>Get in touch</button>
       </div>
-      <img src='' alt='placeholder' />
+      <img src={ContactImage} alt='Me at Capitol Reef National Park' />
     </article>
   )
 }

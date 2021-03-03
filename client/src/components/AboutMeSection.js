@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import AboutImage from '../assets/arches-image.svg'
 
 const AboutMeSection = () => {
   return (
@@ -15,7 +16,7 @@ const AboutMeSection = () => {
           </Link>
         </section>
       </div>
-      <img src='' alt='placeholder' />
+      <img src={AboutImage} alt='Me at Arches National Park' />
     </article>
   )
 }
