@@ -24,26 +24,6 @@
     }
 }
 
-@media (min-width: 2000px){
-    .about {
-        &-header {
-            background-size: 100%;
-            height: 600px;
-        }
-    }
-}
-
-@media (max-width: 1024px){
-    .about {
-        &-header {
-            height: 300px;
-            &-content {
-                margin-top: 100px;
-            }
-        }
-    }
-}
-
 @media (max-width: $breakpoint-tablet){
     .about {
         &-header {
@@ -58,7 +38,7 @@
     }
 }
 
-@media (max-width: 375px){
+@media (max-width: $breakpoint-mobile){
     .about {
         &-header {
             &-content {

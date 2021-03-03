@@ -21,6 +21,12 @@
       width: 100%;
     }
   }
+
+  &-back {
+    @include link-hover;
+    color: $font-bright;
+    font-size: 50px;
+  }
   
   .side-link {
     display: block;

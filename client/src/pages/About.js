@@ -1,8 +1,10 @@
 import React from 'react'
+import SideBack from '../components/SideBack'
 
 const About = () => {
   return (
     <main className='about full-page'>
+      <SideBack route='/#about' />
       <header className='about-header'>
         <div>
           <h1>Hi,</h1>
