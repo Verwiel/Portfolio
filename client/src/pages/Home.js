@@ -99,7 +99,7 @@ const Home = () => {
         onTouchEnd={() => handleTouchEnd(heroNavigate, aboutNavigate)}
       >
         <div className='home-hero-content'>
-          <p>Hey, my name is</p>
+          <p className='title' >Hey, my name is</p>
           <h1>D<span>rew </span>V<span>erwiel</span></h1>
           <h3>I'm a Full Stack Developer based out of Salt Lake City, Utah</h3>
         </div>

@@ -65,13 +65,13 @@ const ProjectsSection = () => {
       <li key={i} className='home-project-container'>
         <section className='home-project-container-text'>
           <h5>{project.name}</h5>
-          <span>
-            <strong>{project.company} </strong>{project.title}
+          <span className='body-1'>
+            <strong>{project.company} </strong><p className='italic'>{project.title}</p>
           </span>
 
-          <p>{project.description}</p>
+          <p className='body-2'>{project.description}</p>
           {!project.isPrivate &&
-            <a href={project.repoLink}>Check it out on Github</a>
+            <a href={project.repoLink} className='hyper-link'>Check it out on Github</a>
           }
         </section>
 

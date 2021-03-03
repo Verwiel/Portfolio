@@ -25,7 +25,7 @@
         height: 50px;
         margin-right: 10px;
       }
-      h1 {
+      h4 {
         @include link-hover;
         @include fade-in;
         margin: 0;
@@ -39,7 +39,7 @@
   box-shadow: 0 10px 30px -10px $background-shadow;
 }
 
-@media (max-width: 825px){
+@media (max-width: $breakpoint-tablet){
   .global-header {
     height: 60px;
     background-color: $background;

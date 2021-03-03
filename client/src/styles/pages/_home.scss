@@ -16,7 +16,6 @@
       text-align: left;
       margin-top: 100px;
       h1 {
-        font-size: 60px;
         margin: 10px 0;
         color: $accent;
         span {
@@ -24,14 +23,13 @@
         }
       }
       p {
-        font-size: 22px;
         color: $font-bright;
         margin: 0;
       }
       h3 {
         display: flex;
-        font-size: 22px;
         color: $font;
+        margin: 10px 0;
       }
     }
   }
@@ -52,21 +50,20 @@
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        width: 85%;
-        margin-right: calc(15% - 40px);
-        height: 21vh;
+        width: 90%;
+        margin-right: calc(10% - 40px);
+        height: 200px;
         background-color: $background;
         border: 2px solid $font;
         &:nth-child(even){
           flex-direction: row-reverse;
           margin: 20px 0;
-          margin-left: calc(15% - 40px);
+          margin-left: calc(10% - 40px);
         }
 
         &-text {
-          padding: 20px;
+          padding: 10px;
           h5 {
-            font-size: 28px;
             margin: 0;
             color: $font-bright;
           }
@@ -75,12 +72,12 @@
           }
           span {
             color: $font;
+            p {
+              margin: 0;
+            }
           }
           p {
             margin: 8px 0;
-          }
-          a {
-            color: $accent;
           }
         }
 
@@ -91,7 +88,7 @@
           width: 150px;
           min-width: 150px;
           background-color: $font;
-          padding: 20px;
+          padding: 10px;
           &-tech {
             padding: 0;
             margin: 0;
@@ -119,17 +116,13 @@
   }
 }
 
-@media (max-width: 825px){
+@media (max-width: $breakpoint-tablet){
   .home {
     &-hero {
       &-content {
         margin-top: 30px;
-        h1 {
-          font-size: 45px;
-        }
       }
     }
-    
     &-about {
       flex-direction: column-reverse;
     }
@@ -144,14 +137,53 @@
             flex-direction: row-reverse;
             margin: 20px 0;
           }
+        }
+      }
+    }
+    &-contact {
+      flex-direction: column-reverse;
+    }
+  }
+}
+
+@media (max-width: $breakpoint-mobile){
+  .home {
+    &-hero {
+      &-content {
+        margin-top: 30px;
+      }
+    }
+    
+    &-about {
+      flex-direction: column-reverse;
+    }
+    &-projects {
+      padding: 0;
+      &-map {
+        .home-project-container {
+          flex-direction: column;
+          height: 28vh;
+          &:nth-child(even){
+            margin: 20px 0 0 0;
+            flex-direction: column;
+          }
+          &:nth-child(3){
+            display: none;
+          }
           &-text {
             padding: 10px;
-            h5 {
-              font-size: 24px;
-            }
           }
           &-graphic {
-            padding: 10px;
+            display: flex;
+            width: calc(100% - 20px);
+            min-width: unset;
+            &-tech {
+              display: flex;
+              flex-wrap: wrap;
+              li {
+                margin: 5px;
+              }
+            }
           }
         }
       }

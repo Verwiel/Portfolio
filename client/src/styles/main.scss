@@ -5,23 +5,24 @@
 @import 'base/functions';
 @import 'base/mixins';
 @import 'base/variables';
+@import 'base/typography';
 @import 'base/base';
 
 // Components
-@import './components/buttons';
-@import './components/card';
-@import './components/card-list';
-@import './components/carousel';
-@import './components/hamburger';
+@import 'components/buttons';
+@import 'components/card';
+@import 'components/card-list';
+@import 'components/carousel';
+@import 'components/hamburger';
 
 // Layout
-@import './layout/header';
-@import './layout/navbar';
-@import './layout/page';
-@import './layout/side-bar';
+@import 'layout/header';
+@import 'layout/navbar';
+@import 'layout/page';
+@import 'layout/side-bar';
 
 // Pages
-@import './pages/home';
-@import './pages/about';
-@import './pages/portfolio';
-@import './pages/contact';
+@import 'pages/home';
+@import 'pages/about';
+@import 'pages/portfolio';
+@import 'pages/contact';

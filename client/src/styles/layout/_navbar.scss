@@ -41,7 +41,7 @@
   }
 }
 
-@media (max-width: 825px){
+@media (max-width: $breakpoint-tablet){
   .navbar {
     &-item {
       &-wrap {

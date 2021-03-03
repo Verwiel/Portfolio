@@ -27,7 +27,7 @@
   }
 }
 
-@media (max-width: 825px){
+@media (max-width: $breakpoint-tablet){
   .full-page {
     max-width: 90vw;
     padding: 60px 5vw;
@@ -39,6 +39,22 @@
     }
     .text-column {
       padding: 0 45px;
+    }
+  }
+}
+
+@media (max-width: $breakpoint-mobile){
+  .full-page {
+    max-width: 90vw;
+    padding: 60px 5vw;
+    min-height: calc(100vh - 120px);
+  }
+  .homepage-section {
+    img {
+      margin: 0 0 20px 0;
+    }
+    .text-column {
+      padding: 0;
     }
   }
 }

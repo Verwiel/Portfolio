@@ -25,7 +25,7 @@
   }
 }
 
-@media (max-width: 825px){
+@media (max-width: $breakpoint-tablet){
   .carousel {
     width: 80vw;
   }

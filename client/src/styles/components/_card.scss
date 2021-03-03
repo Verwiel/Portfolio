@@ -23,7 +23,7 @@
   filter: grayscale(0);
 }
 
-@media (max-width: 825px){
+@media (max-width: $breakpoint-tablet){
   .card {
     filter: grayscale(0);
     &:hover {
@@ -35,7 +35,7 @@
   }
 }
 
-@media (max-width: 425px){
+@media (max-width: $breakpoint-mobile){
   .card {
     width: 100px;
     img, a {

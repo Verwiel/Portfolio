@@ -24,7 +24,7 @@ const Header = () => {
         <Link to='/' className='global-header-content-logo'>
           <img src={Logo} alt='Drew Verwiel Logo' />
           {(showName || scrolled) && 
-            <h1 className='fade-in'>Drew Verwiel</h1>
+            <h4 className='fade-in'>Drew Verwiel</h4>
           }
         </Link>
 

@@ -16,7 +16,7 @@ const ContactSection = () => {
     <article id='contact' className='home-contact'>
       <div className='text-column'>
         <h2>Contact</h2>
-        <p>Find me on social media or send me an email if you're interested in learning more!</p>
+        <p className='body-1'>Find me on social media or send me an email if you're interested in learning more!</p>
         <ul>
           {socialLinksMap}
         </ul>
