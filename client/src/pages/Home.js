@@ -105,13 +105,13 @@ const Home = () => {
       <SideNav location={location} />
       <header 
         id='hero' 
-        className='home-hero full-page' 
+        className='home-hero' 
         ref={homeRef}
         onTouchStart={(e) => handleTouchStart(e)} 
         onTouchMove={(e) => handleTouchMove(e)} 
         onTouchEnd={() => handleTouchEnd(heroNavigate, aboutNavigate)}
       >
-        <div className='home-hero-content'>
+        <div className='home-hero-content homepage-section' >
           <p className='title' >Hey, my name's</p>
           <h1>D<span>rew </span>V<span>erwiel</span></h1>
           <h3>I'm a Full Stack Developer</h3>
@@ -119,7 +119,7 @@ const Home = () => {
       </header>
 
       <div 
-        className='full-page homepage-section'
+        className='homepage-section'
         ref={aboutRef} 
         onTouchStart={(e) => handleTouchStart(e)} 
         onTouchMove={(e) => handleTouchMove(e)} 
@@ -129,7 +129,7 @@ const Home = () => {
       </div>
 
       <div
-        className='full-page homepage-section'
+        className='homepage-section'
         ref={projectsRef}
         onTouchStart={(e) => handleTouchStart(e)} 
         onTouchMove={(e) => handleTouchMove(e)} 
@@ -139,7 +139,7 @@ const Home = () => {
       </div>
 
       <div
-        className='full-page homepage-section'
+        className='homepage-section'
         ref={contactRef}
         onTouchStart={(e) => handleTouchStart(e)} 
         onTouchMove={(e) => handleTouchMove(e)} 

@@ -26,3 +26,26 @@
   -o-animation: fadeIn ease 1s;
   -ms-animation: fadeIn ease 1s;
 }
+
+@mixin full-page {
+  max-width: 80vw;
+  min-height: calc(100vh - 150px);
+  padding: 75px 10vw;
+  @media (max-width: $breakpoint-tablet){
+    max-width: 90vw;
+    padding: 60px 5vw;
+    min-height: calc(100vh - 120px);
+  }
+  @media (max-width: $breakpoint-mobile){
+    max-width: 90vw;
+    min-height: calc(100vh - 120px);
+  }
+}
+
+@mixin backgroundColumnRight {
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: right;
+  background-image: url('../../assets/picture-right-background.svg');
+}

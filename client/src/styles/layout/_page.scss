@@ -1,19 +1,15 @@
-.full-page {
-  max-width: 80vw;
-  min-height: calc(100vh - 150px);
-  padding: 75px 10vw;
-}
-
 .homepage-section {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  width: 100%;
+  flex-direction: column;
+  text-align: left;
+  align-items: flex-start;
   h2 {
     margin: 0 0 20px 0;
+    align-self: flex-start;
+    color: $font-bright;
   }
-  article {
+  section {
     width: 100%;
-    text-align: left;
   }
   button {
     margin-top: 20px; 
@@ -23,18 +19,15 @@
     max-width: 40%;
     max-height: 50vh;
   }
-  .text-column {
-    padding: 0 65px;
+  p {
+    color: $font;
   }
 }
 
 @media (max-width: $breakpoint-tablet){
-  .full-page {
-    max-width: 90vw;
-    padding: 60px 5vw;
-    min-height: calc(100vh - 120px);
-  }
   .homepage-section {
+    padding-left: 5vw;
+    width: calc(100% - 5vw);
     img {
       margin: 0 45px 20px 45px;
       max-width: 85%;
@@ -46,10 +39,6 @@
 }
 
 @media (max-width: $breakpoint-mobile){
-  .full-page {
-    max-width: 90vw;
-    min-height: calc(100vh - 120px);
-  }
   .homepage-section {
     img {
       margin: 0 0 20px 0;

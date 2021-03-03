@@ -1,21 +1,8 @@
 .home {
-  h2 {
-    color: $font-bright;
-  }
-  p {
-    color: $font;
-  }
   &-hero {
-    display: flex;
-    flex-direction: column;
-    // background-image: url('../../assets/background_drawing.svg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center bottom;
+    @include full-page;
+    @include backgroundColumnRight;
     &-content {
-      text-align: left;
-      margin-top: 100px;
-      padding-left: 65px;
       h1 {
         margin: 0;
         color: $accent;
@@ -35,14 +22,19 @@
     }
   }
   &-about {
-    display: flex;
-    justify-content: space-between;
+    @include full-page;
+    @include flex-center;
+    @include backgroundColumnRight;
+    flex-direction: column;
   }
   &-projects {
-    display: flex;
+    @include full-page;
+    @include flex-center;
+    @include backgroundColumnRight;
     flex-direction: column;
-    padding: 0 65px;
-    a {align-self: center;}
+    a {
+      align-self: center;
+    }
     &-map {
       display: flex;
       flex-direction: column;
@@ -104,8 +96,11 @@
     }
   }
   &-contact {
-    display: flex;
-    justify-content: space-between;
+    @include full-page;
+    @include flex-center;
+    @include backgroundColumnRight;
+    flex-direction: column;
+    background-image: url('../../assets/picture-right-background.svg');
     ul {
       display: flex;
       list-style: none;
@@ -123,17 +118,7 @@
 
 @media (max-width: $breakpoint-tablet){
   .home {
-    &-hero {
-      &-content {
-        margin-top: 30px;
-        padding-left: 45px;
-      }
-    }
-    &-about {
-      flex-direction: column-reverse;
-    }
     &-projects {
-      padding: 0 45px;
       &-map {
         .home-project-container {
           width: 100%;
@@ -141,26 +126,12 @@
         }
       }
     }
-    &-contact {
-      flex-direction: column-reverse;
-    }
   }
 }
 
 @media (max-width: $breakpoint-mobile){
   .home {
-    &-hero {
-      &-content {
-        margin-top: 30px;
-        padding-left: 0px;
-      }
-    }
-    
-    &-about {
-      flex-direction: column-reverse;
-    }
     &-projects {
-      padding: 0;
       &-map {
         .home-project-container {
           flex-direction: column;
@@ -188,9 +159,6 @@
           }
         }
       }
-    }
-    &-contact {
-      flex-direction: column-reverse;
     }
   }
 }

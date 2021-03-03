@@ -3,12 +3,11 @@ import SideBack from '../components/SideBack'
 
 const About = () => {
   return (
-    <main className='about full-page'>
+    <main className='about'>
       <SideBack route='/#about' />
       <header className='about-header'>
         <div>
-          <h1>Hi,</h1>
-          <h1>I'm Drew Verwiel.</h1>
+          <h1>Hi, I'm Drew Verwiel.</h1>
           <p className='body-1'>I am a Salt Lake City based Full Stack Web Developer.</p>
         </div>
         <img src='' alt='' />
