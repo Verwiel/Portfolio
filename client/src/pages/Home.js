@@ -6,6 +6,7 @@ import SideNav from '../components/SideNav'
 import AboutMeSection from '../components/AboutMeSection'
 import ProjectsSection from '../components/ProjectsSection'
 import ContactSection from '../components/ContactSection'
+import StyledBackground from '../components/StyledBackground'
 
 const Home = () => { 
   const [wheelEnabled, setWheelEnabled] = useState(true)
@@ -108,6 +109,7 @@ const Home = () => {
   return (
     <main className='home' onWheel={(e) => scrollNavigation(e)} >
       <SideNav location={location} />
+      <StyledBackground />
       <header 
         id='hero' 
         className='home-hero' 

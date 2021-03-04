@@ -1,7 +1,7 @@
 .home {
   &-hero {
     @include full-page;
-    @include backgroundColumnRight;
+    
     &-content {
       h1 {
         margin: 0;
@@ -100,7 +100,6 @@
     @include flex-center;
     @include backgroundColumnRight;
     flex-direction: column;
-    background-image: url('../../assets/picture-right-background.svg');
     ul {
       display: flex;
       list-style: none;
@@ -115,6 +114,49 @@
     }
   }
 }
+
+
+  .styled-background {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    z-index: 0;
+    
+    &-mountain {
+      position: fixed;
+      height: 100vh;
+      width: auto;
+      top: auto;
+      left: auto;
+      right: 5vw;
+      bottom: 0;
+      z-index: 2;
+      fill: none;
+      stroke: $accent;
+      stroke-width: .3;
+
+    }
+    &-treeline {
+      position: absolute;
+      height: auto;
+      max-height: 90%;
+      // width: 100vw;
+      bottom: 0;
+      z-index: 1;
+      &-back {
+        fill: $font-bright;
+      }
+      &-mid {
+        fill: $font;
+      }
+      &-front {
+        fill: $background;
+      }
+    }
+  }
+
 
 @media (max-width: $breakpoint-tablet){
   .home {

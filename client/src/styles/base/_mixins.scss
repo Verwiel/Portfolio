@@ -43,9 +43,9 @@
 }
 
 @mixin backgroundColumnRight {
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-size: 100%;
-  background-position: right;
-  background-image: url('../../assets/picture-right-background.svg');
+  // background-repeat: no-repeat;
+  // background-size: cover;
+  // background-position: center bottom;
+  // padding-top: 30%; 
+  // height: 0;
 }
