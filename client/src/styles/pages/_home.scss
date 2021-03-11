@@ -119,13 +119,18 @@
   .styled-background {
     width: 100vw;
     height: 100vh;
-    position: fixed;
-    z-index: 0;
+    display: flex;
 
-    background-image: url('../../assets/ocean.svg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center bottom;
+    svg {
+      position: fixed;
+      bottom: 0;
+      height: 100vh;
+    }
+
+    // background-image: url('../../assets/ocean.svg');
+    // background-repeat: no-repeat;
+    // background-size: cover;
+    // background-position: center bottom;
     
     // &-svg {
     //   max-height: 50vw;
