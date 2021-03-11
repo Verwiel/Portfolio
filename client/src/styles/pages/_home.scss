@@ -122,10 +122,18 @@
     position: fixed;
     z-index: 0;
 
-    background-image: url('../../assets/ocean.svg');
+    background-image: url('../../assets/ocean-scene.svg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center bottom;
+    
+    &-moon {
+      width: 200px;
+      height: 200px;
+      position: absolute;
+      top: 80px;
+      right: 25%;
+    }
     
     // &-svg {
     //   max-height: 50vw;
