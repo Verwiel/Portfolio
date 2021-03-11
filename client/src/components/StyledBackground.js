@@ -1,12 +1,10 @@
 import React from 'react'
-import Mountain from '../assets/Mountain.js'
-import TreeLine from '../assets/TreeLine.js'
+import Ocean from '../assets/Ocean.js'
 
 const StyledBackground = () => {
   return (
     <div className='styled-background'>
-      <Mountain className='styled-background' />
-      <TreeLine className='styled-background' /> 
+      <Ocean className='styled-background' />
     </div>
   )
 }
