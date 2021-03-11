@@ -5,7 +5,7 @@ const Mountain = ({ className }) => {
     <svg 
       xmlns="http://www.w3.org/2000/svg" 
       viewBox="0 0 7680 4320"
-      preserveAspectRatio="none"
+      // preserveAspectRatio="none"
     >
       <defs>
         <filter 
