@@ -39,7 +39,7 @@
   box-shadow: 0 10px 30px -10px $background-shadow;
 }
 
-@media (max-width: $breakpoint-tablet){
+@media (max-width: $breakpoint-desktop){
   .global-header {
     height: 60px;
     background-color: $background;

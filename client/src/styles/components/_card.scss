@@ -23,7 +23,7 @@
   filter: grayscale(0);
 }
 
-@media (max-width: $breakpoint-tablet){
+@media (max-width: $breakpoint-desktop){
   .card {
     filter: grayscale(0);
     &:hover {

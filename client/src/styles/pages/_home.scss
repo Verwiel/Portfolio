@@ -116,50 +116,36 @@
 }
 
 
-  .styled-background {
-    width: 100vw;
-    height: 100vh;
-    position: fixed;
-    z-index: 0;
-
-    background-image: url('../../assets/ocean-scene.svg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center bottom;
-    
-    &-moon {
-      width: 200px;
-      height: 200px;
-      position: absolute;
-      top: 80px;
-      right: 25%;
-    }
-    
-    // &-svg {
-    //   max-height: 50vw;
-    //   position: fixed;
-    //   right: 0;
-    //   bottom: 0;
-    // }
-    // &-mountain {
-    //   fill: none;
-    //   stroke: $accent;
-    //   stroke-width: .3;
-    //   right: 0;
-    // }
-
-    // &-treeline {
-    //   &-back {
-    //     fill: $font-bright;
-    //   }
-    //   &-front {
-    //     fill: $background;
-    //   }
-    // }
+.styled-background {
+  max-width: 100vw;
+  max-height: 100vh;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  bottom: 0;
+  z-index: 0;
+  background-image: url('../../assets/ocean-scene.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center bottom;
+  
+  &-moon {
+    position: absolute;
+    height: 15vh;
+    top: 80px;
+    right: 25%;
   }
 
+  &-boat {
+    position: absolute;
+    bottom: 50px;
+    left: 25%;
+    height: 10vh;
+  }
+}
 
-@media (max-width: $breakpoint-tablet){
+
+@media (max-width: $breakpoint-desktop){
   .home {
     &-projects {
       &-map {
@@ -168,6 +154,21 @@
           height: 21vh;
         }
       }
+    }
+  }
+  .styled-background {
+    &-moon {
+      height: auto;
+      width: 120px;
+      top: 60px;
+      right: 10vw;
+    }
+
+    &-boat {
+      bottom: 20px;
+      left: 5vw;
+      height: auto;
+      width: 150px;
     }
   }
 }

@@ -13,7 +13,7 @@
   }
 }
 
-@media (max-width: $breakpoint-tablet){
+@media (max-width: $breakpoint-desktop){
   .projects {
     ul {
       @include flex-center;
