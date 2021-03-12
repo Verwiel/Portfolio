@@ -23,6 +23,7 @@ export const useSwipe = () => {
 
   function handleTouchEnd(swipe1Func, swipe2Func){
     // Swipe 1 is Left or Up
+    console.log('hit swipe')
     if(touchStartVertical - touchEndVertical < -75 || touchStartHorizontal - touchEndHorizontal < -75){
       swipe1Func()
       console.log('swiped left / up')

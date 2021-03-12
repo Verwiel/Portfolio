@@ -103,7 +103,11 @@ const Home = () => {
       default:
         break;
     }
-    return () => timer = 0
+    console.log('mount home')
+    return () => {
+      console.log('unmount home')
+      timer = 0
+    } 
   }, [])
 
   return (
