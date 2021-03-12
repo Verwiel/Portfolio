@@ -6,7 +6,8 @@ import SideNav from '../components/SideNav'
 import AboutMeSection from '../components/AboutMeSection'
 import ProjectsSection from '../components/ProjectsSection'
 import ContactSection from '../components/ContactSection'
-import StyledBackground from '../components/StyledBackground'
+import Moon from '../assets/Moon'
+import Boat from '../assets/Boat'
 
 const Home = () => { 
   const [wheelEnabled, setWheelEnabled] = useState(true)
@@ -103,9 +104,7 @@ const Home = () => {
       default:
         break;
     }
-    console.log('mount home')
     return () => {
-      console.log('unmount home')
       timer = 0
     } 
   }, [])
@@ -113,12 +112,14 @@ const Home = () => {
   return (
     <main className='home' onWheel={(e) => scrollNavigation(e)} >
       <SideNav location={location} />
-      <StyledBackground />
+      <Moon className='styled-background-moon' />
+      <Boat className='styled-background-boat'/>
       <header 
         id='hero' 
         className='home-hero' 
         ref={homeRef}
-        onTouchStart={(e) => handleTouchStart(e)} 
+        // onTouchStart={(e) => handleTouchStart(e)} 
+        onTouchStart={(e) => console.log(e)}
         onTouchMove={(e) => handleTouchMove(e)} 
         onTouchEnd={() => handleTouchEnd(heroNavigate, aboutNavigate)}
       >
