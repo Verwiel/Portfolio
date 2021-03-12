@@ -1,4 +1,4 @@
-import React, { useRef, useState, useEffect } from 'react'
+import React, { useRef, useState, useEffect, useMemo } from 'react'
 import { useLocation, useHistory } from 'react-router-dom'
 import { useLockBodyScroll } from '../hooks/useLockBodyScroll'
 import { useSwipe } from '../hooks/useSwipe'
@@ -19,7 +19,7 @@ const Home = () => {
   const contactRef = useRef()
   useLockBodyScroll()
   const [handleTouchStart, handleTouchMove, handleTouchEnd] = useSwipe() 
-  let timer = 500
+  let timer = 750
 
   function navigate(destination, ref){
     history.push(destination)
@@ -118,8 +118,7 @@ const Home = () => {
         id='hero' 
         className='home-hero' 
         ref={homeRef}
-        // onTouchStart={(e) => handleTouchStart(e)} 
-        onTouchStart={(e) => console.log(e)}
+        onTouchStart={(e) => handleTouchStart(e)}
         onTouchMove={(e) => handleTouchMove(e)} 
         onTouchEnd={() => handleTouchEnd(heroNavigate, aboutNavigate)}
       >
