@@ -30,8 +30,6 @@ export const useSwipe = () => {
     if(touchStartVertical - touchEndVertical > 75 || touchStartHorizontal - touchEndHorizontal > 75){
       swipe2Func()
     }
-
   }
-
   return [handleTouchStart, handleTouchMove, handleTouchEnd]
 }
