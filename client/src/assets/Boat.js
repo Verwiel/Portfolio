@@ -58,7 +58,7 @@ const Boat = ({ className }) => {
         />
         <path
           d="M2850 5915c4.0558-2.9605 582.7462-46.374 689.2457-99.3795C3650.1991 5760.3982 3738.6477 5406.4819 3740 5400l-28.349 67.5467C3685.4397 5530 3580 5580 3462.3116 5631.7763 3344.6734 5683.5305 2933.6443 5783.9089 2900 5760"
-          clip-path="url(#a)"
+          clipPath="url(#a)"
           style={{fill:'none', stroke:'#00e696', strokeWidth:'1px', strokeLinecap:'butt', strokeLinejoin:'miter', strokeOpacity:'1'}}
           transform="translate(310.4766 52.5442)"
         />
@@ -68,7 +68,7 @@ const Boat = ({ className }) => {
         />
         <path
           d="M3710 5380c-500 50-500 60-500 60-240 70-690 170-690 190"
-          clip-path="url(#b)"
+          clipPath="url(#b)"
           style={{fill:'none', stroke:'#000', strokeWidth:'1px', strokeLinecap:'butt', strokeLinejoin:'miter', strokeOpacity:'1'}}
           transform="translate(310.4766 52.5442)"
         />
@@ -77,7 +77,7 @@ const Boat = ({ className }) => {
         />
         <path
           d="M2910 5730l-340-110 640-160s13.5041-6.0396 25.3084-8.105C3269 5446 3342.7993 5430.1056 3700 5400"
-          clip-path="url(#c)"
+          clipPath="url(#c)"
           style={{fill:'none', stroke:'#000', strokeWidth:'1px', strokeLinecap:'butt', strokeLinejoin:'miter', strokeOpacity:'1'}}
           transform="translate(310.4766 52.5442)"
         />
@@ -95,13 +95,13 @@ const Boat = ({ className }) => {
         />
         <path
           d="M3700 5400c.6421-4.7728-30 30-66.0762 63.7871-27.1527 25.4298-64.5354 67.8521-108.9238 74.2129"
-          clip-path="url(#d)"
+          clipPath="url(#d)"
           style={{fill:'none', stroke:'#00e696', strokeWidth:'1px', strokeLinecap:'butt', strokeLinejoin:'miter', strokeOpacity:'1'}}
           transform="translate(310.4766 52.5442)"
         />
         <path
           d="M3710 5410s-28.1598 20.9949-61.417 53.6601c-29.6674 29.1393-61.006 69.553-117.583 81.3399"
-          clip-path="url(#e)"
+          clipPath="url(#e)"
           style={{fill:'none', stroke:'#00e696', strokeWidth:'1px', strokeLinecap:'butt', strokeLinejoin:'miter', strokeOpacity:'1'}}
           transform="translate(310.4766 52.5442)"
         />
