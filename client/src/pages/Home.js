@@ -122,11 +122,11 @@ const Home = () => {
         onTouchMove={(e) => handleTouchMove(e)} 
         onTouchEnd={() => handleTouchEnd(heroNavigate, aboutNavigate)}
       >
-        <div className='home-hero-content homepage-section' >
+        <article className='home-hero-content homepage-section' >
           <p className='title' >Hey, my name's</p>
           <h1>D<span>rew </span>V<span>erwiel</span></h1>
           <h3>I'm a Full Stack Developer</h3>
-        </div>
+        </article>
       </header>
 
       <div 
