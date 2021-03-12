@@ -37,15 +37,6 @@
     min-height: calc(100vh - 120px);
   }
   @media (max-width: $breakpoint-mobile){
-    max-width: 90vw;
     min-height: calc(100vh - 120px);
   }
-}
-
-@mixin backgroundColumnRight {
-  // background-repeat: no-repeat;
-  // background-size: cover;
-  // background-position: center bottom;
-  // padding-top: 30%; 
-  // height: 0;
 }

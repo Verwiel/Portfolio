@@ -24,81 +24,16 @@
   &-about {
     @include full-page;
     @include flex-center;
-    @include backgroundColumnRight;
     flex-direction: column;
   }
   &-projects {
     @include full-page;
     @include flex-center;
-    @include backgroundColumnRight;
     flex-direction: column;
-    a {
-      align-self: center;
-    }
-    &-map {
-      display: flex;
-      flex-direction: column;
-      padding: 0;
-      margin: 0;
-      list-style: none;
-      .home-project-container {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        width: 90%;
-        align-self: flex-start;
-        height: 200px;
-        background-color: $background;
-        border: 2px solid $font;
-        &:nth-child(even){
-          flex-direction: row-reverse;
-          margin: 20px 0;
-          align-self: flex-end;
-          justify-content: flex-end;
-        }
-
-        &-text {
-          padding: 10px;
-          h5 {
-            margin: 0;
-            color: $font-bright;
-          }
-          strong {
-            color: $accent;
-          }
-          span {
-            color: $font;
-            p {
-              margin: 0;
-            }
-          }
-          p {
-            margin: 8px 0;
-          }
-        }
-
-        &-graphic {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          width: 150px;
-          min-width: 150px;
-          background-color: $font;
-          padding: 10px;
-          &-tech {
-            padding: 0;
-            margin: 0;
-            list-style: none;
-            color: $background;
-          }
-        }
-      }
-    }
   }
   &-contact {
     @include full-page;
     @include flex-center;
-    @include backgroundColumnRight;
     flex-direction: column;
     ul {
       display: flex;
@@ -145,16 +80,6 @@
 
 
 @media (max-width: $breakpoint-desktop){
-  .home {
-    &-projects {
-      &-map {
-        .home-project-container {
-          width: 100%;
-          height: 21vh;
-        }
-      }
-    }
-  }
   .styled-background {
     &-moon {
       height: auto;
@@ -172,36 +97,5 @@
   }
 }
 
-@media (max-width: $breakpoint-mobile){
-  .home {
-    &-projects {
-      &-map {
-        .home-project-container {
-          flex-direction: column;
-          height: 28vh;
-          &:nth-child(even){
-            flex-direction: column;
-          }
-          &:nth-child(3){
-            display: none;
-          }
-          &-text {
-            padding: 10px;
-          }
-          &-graphic {
-            display: flex;
-            width: calc(100% - 20px);
-            min-width: unset;
-            &-tech {
-              display: flex;
-              flex-wrap: wrap;
-              li {
-                margin: 5px;
-              }
-            }
-          }
-        }
-      }
-    }
-  }
-}
+// @media (max-width: $breakpoint-mobile){
+// }
