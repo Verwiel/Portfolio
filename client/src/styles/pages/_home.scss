@@ -1,10 +1,7 @@
 .home {
   &-hero {
     @include full-page;
-    background-image: url('../../assets/headshot-drawing.svg');
-    background-repeat: no-repeat;
-    background-size: auto 70%;
-    background-position: bottom right;
+    @include headshot-drawing;
     
     &-content {
       h1 {
@@ -28,6 +25,7 @@
   &-about {
     @include full-page;
     @include flex-center;
+    @include headshot-drawing;
     flex-direction: column;
   }
   &-projects {
@@ -74,13 +72,6 @@
 
 
 @media (max-width: $breakpoint-desktop){
-  .home {
-    &-hero {
-      background-size: 100% 70%;
-      background-position: bottom center;
-    }
-  }
-
   .styled-background {
     &-moon {
       height: auto;

@@ -1,4 +1,4 @@
-import React, { useRef, useState, useEffect, useMemo } from 'react'
+import React, { useRef, useState, useEffect } from 'react'
 import { useLocation, useHistory } from 'react-router-dom'
 import { useLockBodyScroll } from '../hooks/useLockBodyScroll'
 import { useSwipe } from '../hooks/useSwipe'
@@ -6,8 +6,6 @@ import SideNav from '../components/SideNav'
 import AboutMeSection from '../components/AboutMeSection'
 import ProjectsSection from '../components/ProjectsSection'
 import ContactSection from '../components/ContactSection'
-// import Moon from '../assets/Moon'
-// import Boat from '../assets/Boat'
 
 const Home = () => { 
   const [wheelEnabled, setWheelEnabled] = useState(true)
@@ -112,8 +110,6 @@ const Home = () => {
   return (
     <main className='home' onWheel={(e) => scrollNavigation(e)} >
       <SideNav location={location} />
-      {/* <Moon className='styled-background-moon' />
-      <Boat className='styled-background-boat'/> */}
       <header 
         id='hero' 
         className='home-hero' 
