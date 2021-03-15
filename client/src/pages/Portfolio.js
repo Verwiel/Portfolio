@@ -5,9 +5,9 @@ import Technologies from '../components/Technologies'
 const Portfolio = () => {
   return (
     <div className='portfolio'>
-      {/* <h1 id='projects'>Portfolio</h1>
+      <h1 id='projects'>Portfolio</h1>
       <ProjectList />
-      <Technologies />  */}
+      <Technologies /> 
     </div>
   )
 }

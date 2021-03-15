@@ -1,9 +1,5 @@
 .portfolio {
     @include full-page;
-    background-image: url('../../assets/headshot-drawing.svg');
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center bottom;
     h1 {
         margin: 0;
         padding: 20px;
