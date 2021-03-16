@@ -1,7 +1,7 @@
 .home {
   &-hero {
     @include full-page;
-    @include headshot-drawing;
+    // @include headshot-drawing;
     
     &-content {
       h1 {
@@ -25,8 +25,11 @@
   &-about {
     @include full-page;
     @include flex-center;
-    @include headshot-drawing;
+    
     flex-direction: column;
+    section {
+      max-width: 50%;
+    }
   }
   &-projects {
     @include full-page;
@@ -50,6 +53,13 @@
       }
     }
   }
+  &-background {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    height: auto;
+    max-width: 50%;
+  }
 }
 
 
@@ -72,6 +82,24 @@
 
 
 @media (max-width: $breakpoint-desktop){
+  .home {
+    &-about {
+      justify-content: flex-start;
+    }
+    &-projects {
+      justify-content: flex-start;
+    }
+    &-contact {
+      justify-content: flex-start;
+    }
+    &-background {
+      left: 0;
+      max-height: 50%;
+      max-width: unset;
+      width: 100%;
+    }
+  }
+  
   .styled-background {
     &-moon {
       height: auto;

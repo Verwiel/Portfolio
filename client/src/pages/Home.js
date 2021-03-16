@@ -7,6 +7,8 @@ import AboutMeSection from '../components/AboutMeSection'
 import ProjectsSection from '../components/ProjectsSection'
 import ContactSection from '../components/ContactSection'
 
+import HeadshotDrawing from '../assets/headshot-drawing.svg'
+
 const Home = () => { 
   const [wheelEnabled, setWheelEnabled] = useState(true)
   const location = useLocation()
@@ -123,10 +125,11 @@ const Home = () => {
           <h1>D<span>rew </span>V<span>erwiel</span></h1>
           <h3>I'm a Full Stack Developer</h3>
         </article>
+        <img className='home-background' src={HeadshotDrawing} />
       </header>
 
       <div 
-        className='homepage-section'
+        className='home-about'
         ref={aboutRef} 
         onTouchStart={(e) => handleTouchStart(e)} 
         onTouchMove={(e) => handleTouchMove(e)} 
@@ -136,7 +139,7 @@ const Home = () => {
       </div>
 
       <div
-        className='homepage-section'
+        className='home-projects'
         ref={projectsRef}
         onTouchStart={(e) => handleTouchStart(e)} 
         onTouchMove={(e) => handleTouchMove(e)} 
@@ -146,7 +149,7 @@ const Home = () => {
       </div>
 
       <div
-        className='homepage-section'
+        className='home-contact'
         ref={contactRef}
         onTouchStart={(e) => handleTouchStart(e)} 
         onTouchMove={(e) => handleTouchMove(e)} 

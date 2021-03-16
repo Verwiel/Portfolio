@@ -40,15 +40,3 @@
     min-height: calc(100vh - 120px);
   }
 }
-
-@mixin headshot-drawing {
-  background-image: url('../../assets/headshot-drawing.svg');
-  background-repeat: no-repeat;
-  background-size: auto 70%;
-  background-position: bottom right;
-  background-attachment: fixed;
-  @media (max-width: $breakpoint-desktop){
-    background-size: 100% 70%;
-    background-position: bottom center;
-  }
-}

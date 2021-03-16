@@ -13,7 +13,7 @@ const ContactSection = () => {
   ))
 
   return (
-    <article id='contact' className='home-contact'>
+    <article id='contact' className='homepage-section'>
       <h2>Contact</h2>
       <section>
         <p className='body-1'>Find me on social media or send me an email if you're interested in learning more!</p>
