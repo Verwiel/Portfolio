@@ -20,9 +20,9 @@ const Home = () => {
   useLockBodyScroll()
   const [handleTouchStart, handleTouchMove, handleTouchEnd] = useSwipe() 
   let timer = 750
-console.log(location.hash)
+
   const displayImage = location.hash === '' || location.hash === '#hero' || location.hash === '#about'
-console.log(displayImage)
+
   function navigate(destination, ref){
     history.push(destination)
     window.scrollTo({ behavior: 'smooth', top: ref.current.offsetTop })
@@ -127,7 +127,7 @@ console.log(displayImage)
           <h1>D<span>rew </span>V<span>erwiel</span></h1>
           <h3>I'm a Full Stack Developer</h3>
         </article>
-        <img className='home-background' src={HeadshotDrawing} style={{display: displayImage ? '' : 'none'}}/>
+        <img className='home-background' src={HeadshotDrawing} style={{opacity: displayImage ? '1' : '0'}}/>
       </header>
 
       <div 
