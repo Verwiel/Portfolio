@@ -51,11 +51,7 @@
     }
   }
   &-background {
-    position: fixed;
-    bottom: 0;
-    right: 0;
-    height: 70%;
-    width: auto;
+    @include backgroundImageMe;
     transition-timing-function: ease-out;
     transition-duration: .5s;
   }
@@ -74,12 +70,6 @@
     }
     &-contact {
       justify-content: flex-start;
-    }
-    &-background {
-      left: 0;
-      max-height: 50%;
-      max-width: unset;
-      width: 100%;
     }
   }
 }

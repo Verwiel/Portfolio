@@ -27,6 +27,30 @@
   -ms-animation: fadeIn ease 1s;
 }
 
+@mixin fade-out {
+  animation: fadeOut ease 1s;
+  -webkit-animation: fadeOut ease 1s;
+  -moz-animation: fadeOut ease 1s;
+  -o-animation: fadeOut ease 1s;
+  -ms-animation: fadeOut ease 1s;
+}
+
+@mixin fade-out-image {
+  animation: fadeOutMoveImage 1s linear;
+  -webkit-animation: fadeOutMoveImage 1s linear;
+  -moz-animation: fadeOutMoveImage 1s linear;
+  -o-animation: fadeOutMoveImage 1s linear;
+  -ms-animation: fadeOutMoveImage 1s linear;
+}
+
+@mixin fade-in-image {
+  animation: fadeInMoveImage 1s linear;
+  -webkit-animation: fadeInMoveImage 1s linear;
+  -moz-animation: fadeInMoveImage 1s linear;
+  -o-animation: fadeInMoveImage 1s linear;
+  -ms-animation: fadeInMoveImage 1s linear;
+}
+
 @mixin full-page {
   max-width: 80vw;
   min-height: calc(100vh - 150px);
@@ -38,5 +62,19 @@
   }
   @media (max-width: $breakpoint-mobile){
     min-height: calc(100vh - 120px);
+  }
+}
+
+@mixin backgroundImageMe {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  height: 70%;
+  width: auto;
+  @media (max-width: $breakpoint-desktop){
+    left: 0;
+    max-height: 50%;
+    max-width: unset;
+    width: 100%;
   }
 }

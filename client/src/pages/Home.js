@@ -6,7 +6,6 @@ import SideNav from '../components/SideNav'
 import AboutMeSection from '../components/AboutMeSection'
 import ProjectsSection from '../components/ProjectsSection'
 import ContactSection from '../components/ContactSection'
-
 import HeadshotDrawing from '../assets/headshot-drawing.svg'
 
 const Home = () => { 

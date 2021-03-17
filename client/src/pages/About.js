@@ -1,16 +1,28 @@
-import React from 'react'
+import React, { useState } from 'react'
 import SideBack from '../components/SideBack'
+import HeadshotReal from '../assets/headshot-real.svg'
+import HeadshotDrawing from '../assets/headshot-drawing.svg'
 
 const About = () => {
+  const [animationFinished, setAnimationFinished] = useState(false)
+
+  setTimeout( function(){
+    setAnimationFinished(true)
+  }, 1000)
+
   return (
     <main className='about'>
       <SideBack route='/#about' />
       <header className='about-header'>
-        <div>
+        <article>
           <h1>Hi, I'm Drew Verwiel.</h1>
           <p className='body-1'>I am a Salt Lake City based Full Stack Web Developer.</p>
+        </article>
+
+        <div className='about-background'>
+          <img className='about-background-drawing' src={HeadshotDrawing} />
+          <img className='about-background-real' src={HeadshotReal} alt='' style={{position: animationFinished ? 'absolute' : 'fixed'}}/>
         </div>
-        <img src='' alt='' />
       </header>
 
       <article className='about-content'>

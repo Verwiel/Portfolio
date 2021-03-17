@@ -1,9 +1,11 @@
 .btn-green {
-  background: transparent;
+  position: absolute;
   padding: 10px 20px;
   color: $accent;
+  background-color: $background;
   border: 1px solid $accent;
   border-radius: 20px;
+  z-index: 2;
   &:hover,:focus {
     background-color: rgba(0, 230, 150, 0.1);
   }
