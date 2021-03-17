@@ -1,8 +1,6 @@
 .home {
   &-hero {
     @include full-page;
-    // @include headshot-drawing;
-    
     &-content {
       h1 {
         margin: 0;
@@ -25,7 +23,6 @@
   &-about {
     @include full-page;
     @include flex-center;
-    
     flex-direction: column;
     section {
       max-width: 50%;
@@ -57,34 +54,18 @@
     position: fixed;
     bottom: 0;
     right: 0;
-    height: auto;
-    max-width: 50%;
+    height: 70%;
+    width: auto;
   }
 }
-
-
-.styled-background {
-  &-moon {
-    position: fixed;
-    height: 15vh;
-    top: 80px;
-    right: 25%;
-  }
-
-  &-boat {
-    position: absolute;
-    bottom: 50px;
-    left: 25%;
-    height: 10vh;
-    z-index: 0;
-  }
-}
-
 
 @media (max-width: $breakpoint-desktop){
   .home {
     &-about {
       justify-content: flex-start;
+      section {
+        max-width: 100%;
+      }
     }
     &-projects {
       justify-content: flex-start;
@@ -97,22 +78,6 @@
       max-height: 50%;
       max-width: unset;
       width: 100%;
-    }
-  }
-  
-  .styled-background {
-    &-moon {
-      height: auto;
-      width: 120px;
-      top: 60px;
-      right: 10vw;
-    }
-
-    &-boat {
-      bottom: 20px;
-      left: 5vw;
-      height: auto;
-      width: 150px;
     }
   }
 }

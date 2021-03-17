@@ -14,11 +14,6 @@
   button {
     margin-top: 20px; 
   }
-  img {
-    margin: 0px;
-    max-width: 40%;
-    max-height: 50vh;
-  }
   p {
     color: $font;
   }
@@ -31,10 +26,6 @@
     h2 {
       margin: 50px 0 20px 0;
     }
-    img {
-      margin: 0 45px 20px 45px;
-      max-width: 85%;
-    }
     .text-column {
       padding: 0 45px;
     }
@@ -43,9 +34,8 @@
 
 @media (max-width: $breakpoint-mobile){
   .homepage-section {
-    img {
-      margin: 0 0 20px 0;
-      max-width: 95%;
+    h2 {
+      margin: 20px 0 5px 0;
     }
     .text-column {
       padding: 0;
