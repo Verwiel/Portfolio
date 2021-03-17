@@ -51,18 +51,36 @@
 
 // Fade and move used in desktop About
 @keyframes fadeOutMoveImage {
-  0% {opacity:1;}
-  100% {opacity:0;}
+  0% {
+    opacity:1;
+    transform : scale(1);
+  }
+  100% {
+    transform: translate(30%, -46.5%) scale(.4);
+    opacity:0;
+  }
 }
 
 @-moz-keyframes fadeOutMoveImage {
-  0% {opacity:1;}
-  100% {opacity:0;}
+  0% {
+    opacity:1;
+    transform : scale(1);
+  }
+  100% {
+    transform: translate(30%, -46.5%) scale(.4);
+    opacity:0;
+  }
 }
   
 @-webkit-keyframes fadeOutMoveImage {
-  0% {opacity:1;}
-  100% {opacity:0;}
+  0% {
+    opacity:1;
+    transform : scale(1);
+  }
+  100% {
+    transform: translate(30%, -46.5%) scale(.4);
+    opacity:0;
+  }
 }
   
 @-o-keyframes fadeOutMoveImage {
@@ -95,7 +113,6 @@
   100% {
     transform: translate(30%, -46.5%) scale(.4);
     opacity:1;
-    
   }
 }
 

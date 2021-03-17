@@ -15,8 +15,7 @@ const About = () => {
       <SideBack route='/#about' />
       <header className='about-header'>
         <article>
-          <h1>Hi, I'm Drew Verwiel.</h1>
-          <p className='body-1'>I am a Salt Lake City based Full Stack Web Developer.</p>
+          <h1>About Me</h1>
         </article>
 
         <div className='about-background'>
