@@ -1,6 +1,10 @@
 .home {
   &-hero {
     @include full-page;
+    background-image: url('../../assets/hero-background.svg');
+    background-color: $navy-light !important;
+    background-size: cover;
+    background-position: center;
     &-content {
       h1 {
         margin: 0;
@@ -8,10 +12,6 @@
         span {
           color: $font-bright;
         }
-      }
-      p {
-        color: $font-bright;
-        margin: 0;
       }
       h3 {
         display: flex;
@@ -32,11 +32,18 @@
     @include full-page;
     @include flex-center;
     flex-direction: column;
+    background-image: url('../../assets/home-projects-background.svg');
+    background-color: $navy-light !important;
+    background-size: cover;
+    background-position: center top;
   }
   &-contact {
     @include full-page;
     @include flex-center;
     flex-direction: column;
+    background-image: url('../../assets/contact-background.svg');
+    background-size: cover;
+    background-position: center top;
     ul {
       display: flex;
       list-style: none;
@@ -73,6 +80,3 @@
     }
   }
 }
-
-// @media (max-width: $breakpoint-mobile){
-// }

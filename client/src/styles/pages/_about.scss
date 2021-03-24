@@ -9,10 +9,13 @@
         p, ul {
             color: $font;
         }
-
         &-header {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
             background-color: $background-shadow;
         }
+
         &-background {
             &-drawing {
                 @include backgroundImageMe;

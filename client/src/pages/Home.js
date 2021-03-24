@@ -122,9 +122,8 @@ const Home = () => {
         onTouchEnd={() => handleTouchEnd(heroNavigate, aboutNavigate)}
       >
         <article className='home-hero-content homepage-section' >
-          <p className='title' >Hey, my name's</p>
           <h1>D<span>rew </span>V<span>erwiel</span></h1>
-          <h3>I'm a Full Stack Developer</h3>
+          <h3>Full Stack Developer</h3>
         </article>
         <img className='home-background' src={HeadshotDrawing} style={{opacity: displayImage ? '1' : '0'}}/>
       </header>
