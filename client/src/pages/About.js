@@ -1,15 +1,8 @@
 import React, { useState } from 'react'
 import SideBack from '../components/SideBack'
-import HeadshotReal from '../assets/headshot-real.svg'
-import HeadshotDrawing from '../assets/headshot-drawing.svg'
+
 
 const About = () => {
-  const [animationFinished, setAnimationFinished] = useState(false)
-
-  setTimeout( function(){
-    setAnimationFinished(true)
-  }, 1000)
-
   return (
     <main className='about'>
       <SideBack route='/#about' />
@@ -17,11 +10,6 @@ const About = () => {
         <article>
           <h1>About Me</h1>
         </article>
-
-        <div className='about-background'>
-          <img className='about-background-drawing' src={HeadshotDrawing} />
-          <img className='about-background-real' src={HeadshotReal} alt='' style={{position: animationFinished ? 'absolute' : 'fixed'}}/>
-        </div>
       </header>
 
       <article className='about-content'>

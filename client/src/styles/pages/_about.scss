@@ -15,19 +15,6 @@
             width: 100%;
             background-color: $background-shadow;
         }
-
-        &-background {
-            &-drawing {
-                @include backgroundImageMe;
-                @include fade-out;
-                opacity: 0;
-            }
-            &-real {
-                @include backgroundImageMe;
-                @include fade-in;
-                opacity: 1;
-            }
-        }
     }
 }
 
@@ -48,18 +35,6 @@
                 width: auto;
                 height: auto;
                 margin-top: 10px;
-            }
-        }
-        &-background {
-            &-drawing {
-                @include backgroundImageMe;
-                @include fade-out;
-                opacity: 0;
-            }
-            &-real {
-                @include backgroundImageMe;
-                @include fade-in;
-                opacity: 1;
             }
         }
     }
@@ -88,21 +63,6 @@
             section {
                 padding: 10px 0;
                 margin: 20px 0;
-            }
-        }
-
-        &-background {
-            position: relative;
-            width: 50%;
-            &-drawing {
-                @include fade-out-image;
-                @include backgroundImageMe;
-                opacity: 0;
-            }
-            &-real {
-                @include fade-in-image;
-                @include backgroundImageMe;
-                opacity: 1;
             }
         }
     }

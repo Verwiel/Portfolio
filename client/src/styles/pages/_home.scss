@@ -1,10 +1,12 @@
 .home {
+  background-image: url('../../assets/home-background-desktop.svg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
   &-hero {
     @include full-page;
-    background-image: url('../../assets/hero-background.svg');
-    background-color: $navy-light !important;
-    background-size: cover;
-    background-position: center;
     &-content {
       h1 {
         margin: 0;
@@ -32,18 +34,11 @@
     @include full-page;
     @include flex-center;
     flex-direction: column;
-    background-image: url('../../assets/home-projects-background.svg');
-    background-color: $navy-light !important;
-    background-size: cover;
-    background-position: center top;
   }
   &-contact {
     @include full-page;
     @include flex-center;
     flex-direction: column;
-    background-image: url('../../assets/contact-background.svg');
-    background-size: cover;
-    background-position: center top;
     ul {
       display: flex;
       list-style: none;
@@ -66,6 +61,7 @@
 
 @media (max-width: $breakpoint-desktop){
   .home {
+    background-image: url('../../assets/home-background-mobile.svg');
     &-about {
       justify-content: flex-start;
       section {

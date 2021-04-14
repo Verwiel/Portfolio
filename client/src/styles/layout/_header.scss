@@ -5,7 +5,7 @@
   bottom: auto;
   width: 100vw;
   height: 75px;
-  background-color: $background;
+  background-color: transparent;
   z-index: 2;
   transition: all .3s ease-in-out;
 
@@ -42,8 +42,6 @@
 @media (max-width: $breakpoint-desktop){
   .global-header {
     height: 60px;
-    background-color: $background;
-
     &-content {
       max-width: unset;
       padding: 0 20px 0 0;
