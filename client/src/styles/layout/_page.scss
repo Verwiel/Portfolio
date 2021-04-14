@@ -1,8 +1,9 @@
 .homepage-section {
-  width: 100%;
-  flex-direction: column;
-  text-align: left;
+  display: flex;
   align-items: flex-start;
+  flex-direction: column;
+  width: 100%;
+  text-align: left;
   h2 {
     margin: 0 0 20px 0;
     align-self: flex-start;
@@ -26,9 +27,6 @@
     h2 {
       margin: 50px 0 20px 0;
     }
-    .text-column {
-      padding: 0 45px;
-    }
   }
 }
 
@@ -36,9 +34,6 @@
   .homepage-section {
     h2 {
       margin: 20px 0 5px 0;
-    }
-    .text-column {
-      padding: 0;
     }
   }
 }

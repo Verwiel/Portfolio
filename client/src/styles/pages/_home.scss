@@ -25,20 +25,15 @@
   &-about {
     @include full-page;
     @include flex-center;
-    flex-direction: column;
-    section {
-      max-width: 50%;
-    }
   }
   &-projects {
     @include full-page;
     @include flex-center;
-    flex-direction: column;
   }
   &-contact {
     @include full-page;
     @include flex-center;
-    flex-direction: column;
+    
     ul {
       display: flex;
       list-style: none;
@@ -53,7 +48,7 @@
     }
   }
   &-background {
-    @include backgroundImageMe;
+    @include homeBackgroundImages;
     transition-timing-function: ease-out;
     transition-duration: .5s;
   }
@@ -64,9 +59,6 @@
     background-image: url('../../assets/home-background-mobile.svg');
     &-about {
       justify-content: flex-start;
-      section {
-        max-width: 100%;
-      }
     }
     &-projects {
       justify-content: flex-start;

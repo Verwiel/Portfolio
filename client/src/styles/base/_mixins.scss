@@ -36,6 +36,7 @@
 }
 
 @mixin full-page {
+  position: relative;
   max-width: 80vw;
   min-height: calc(100vh - 150px);
   padding: 75px 10vw;
@@ -49,8 +50,8 @@
   }
 }
 
-@mixin backgroundImageMe {
-  position: fixed;
+@mixin homeBackgroundImages {
+  position: absolute;
   bottom: 0;
   right: 0;
   height: 70%;

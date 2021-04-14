@@ -20,8 +20,6 @@ const Home = () => {
   const [handleTouchStart, handleTouchMove, handleTouchEnd] = useSwipe() 
   let timer = 750
 
-  const displayImage = location.hash === '' || location.hash === '#hero' || location.hash === '#about'
-
   function navigate(destination, ref){
     history.push(destination)
     window.scrollTo({ behavior: 'smooth', top: ref.current.offsetTop })
@@ -125,7 +123,7 @@ const Home = () => {
           <h1>D<span>rew </span>V<span>erwiel</span></h1>
           <h3>Full Stack Developer</h3>
         </article>
-        <img className='home-background' src={HeadshotDrawing} style={{opacity: displayImage ? '1' : '0'}}/>
+        <img className='home-background' src={HeadshotDrawing} />
       </header>
 
       <div 
