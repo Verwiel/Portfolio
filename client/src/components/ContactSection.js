@@ -23,6 +23,7 @@ const ContactSection = () => {
         </ul>
         <button className='btn-green'>Hit me up</button>
       </section>
+      {/* Image of Phone, Envelope, Laptop*/}
       <img className='home-background' src={HeadshotDrawing} />
     </article>
   )

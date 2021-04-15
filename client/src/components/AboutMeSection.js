@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import AboutMeDrawing from '../assets/about-me-drawing.svg'
 
 const AboutMeSection = () => {
   return (
@@ -13,6 +14,7 @@ const AboutMeSection = () => {
           <button className='btn-green'>Want to learn more?</button>
         </Link>
       </section>
+      <img className='home-background' src={AboutMeDrawing} />
     </article>
   )
 }

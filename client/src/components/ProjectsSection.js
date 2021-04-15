@@ -15,6 +15,8 @@ const ProjectsSection = () => {
       <Link to='/portfolio'>
         <button className='btn-green'>See more projects</button>
       </Link>
+      {/* Image of */}
+      {/* <img className='home-background' src={HeadshotDrawing} /> */}
     </article>
   )
 }
