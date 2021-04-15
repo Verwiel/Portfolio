@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import ProjectsDrawing from '../assets/projects-drawing.svg'
 
 const ProjectsSection = () => {
   return (
@@ -15,8 +16,7 @@ const ProjectsSection = () => {
       <Link to='/portfolio'>
         <button className='btn-green'>See more projects</button>
       </Link>
-      {/* Image of */}
-      {/* <img className='home-background' src={HeadshotDrawing} /> */}
+      <img className='home-background' src={ProjectsDrawing} />
     </article>
   )
 }
