@@ -1,6 +1,6 @@
 import React from 'react'
 import SideBack from '../components/SideBack'
-import Hobbies from '../assets/Hobbies'
+import HobbiesImage from '../assets/HobbiesImage'
 
 
 const About = () => {
@@ -30,8 +30,8 @@ const About = () => {
           <p className='body-1'>In the immediate future I am looking to start my journey towards software engineering as well as open myself up to freelance opportunities.</p>
         </section>
 
-        <section>
-          <Hobbies />
+        <section className='hobbies'>
+          <HobbiesImage />
         </section>
       </article>
     </main>
