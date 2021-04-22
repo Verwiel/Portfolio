@@ -1,5 +1,6 @@
-import React, { useState } from 'react'
+import React from 'react'
 import SideBack from '../components/SideBack'
+import Hobbies from '../assets/Hobbies'
 
 
 const About = () => {
@@ -30,14 +31,7 @@ const About = () => {
         </section>
 
         <section>
-          <h2>Get to know me</h2>
-          <p className='body-1'>Hobbies / Interests</p>
-          <ul className='body-1'>
-            <li>Adventure</li>
-            <li>Action Sports</li>
-            <li>Brewing</li>
-            <li>Gaming</li>
-          </ul>
+          <Hobbies />
         </section>
       </article>
     </main>
