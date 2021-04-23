@@ -38,11 +38,11 @@ const About = () => {
         </section>
       </article>
       
-      <section className='hobbies' style={{paddingBottom: activeHobby.length > 0 ? '0' : '29px'}}>
+      <section className='hobbies' style={{paddingBottom: activeHobby.length > 0 ? '0' : '39px'}}>
         <HobbiesImage activeHobby={activeHobby} handleClick={handleClick} />
         {activeHobby.length > 0 && 
           <div>
-            <h4 style={{margin: '0 0 0 0'}}>{activeHobby}</h4>
+            <h4 style={{margin: '10px 0 0 0'}}>{activeHobby}</h4>
           </div>
         }
       </section>
