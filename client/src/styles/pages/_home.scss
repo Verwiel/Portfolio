@@ -58,13 +58,13 @@
   .home {
     background-image: url('../../assets/home-background-mobile.svg');
     &-about {
-      justify-content: flex-start;
+      align-items: flex-start;
     }
     &-projects {
-      justify-content: flex-start;
+      align-items: flex-start;
     }
     &-contact {
-      justify-content: flex-start;
+      align-items: flex-start;
     }
   }
 }
