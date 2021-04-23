@@ -60,7 +60,7 @@
 @media (max-width: $breakpoint-mobile){
   .side-bar {
     flex-direction: row;
-    left: auto;
+    left: 0;
     top: auto;
     bottom: 0;
     height: 60px;
