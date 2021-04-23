@@ -2,6 +2,7 @@
     .about {
         @include full-page;
         padding: 60px 5vw;
+        overflow: hidden;
         h1, h2 {
             margin: 0;
             color: $font-bright;
@@ -12,8 +13,10 @@
         &-header {
             display: flex;
             justify-content: space-between;
-            width: 100%;
             background-color: $background-shadow;
+        }
+        .hobbies {
+            margin-left: -5vw;
         }
     }
 }
@@ -22,6 +25,7 @@
     .about {
         @include full-page;
         padding: 60px 10vw;
+        overflow: hidden;
         h1, h2 {
             margin: 0;
             color: $font-bright;
@@ -50,7 +54,9 @@
         &-header {
             display: flex;
             justify-content: space-between;
-            width: 99vw;
+            width: 100vw;
+            padding: 0;
+            margin: 0;
             background-color: $background-shadow;
             article {
                 padding-left: 5vw;
@@ -64,6 +70,45 @@
                 padding: 10px 0;
                 margin: 20px 0;
             }
+        }
+    }
+}
+
+.hobbies {
+    width: 100vw;
+    &-image {
+        max-height: 800px;
+        width: 100%;
+        height: 100%;
+        &-background {
+            background-color: red;
+            fill: red;
+            cursor: pointer;
+        }
+        &-outline {
+            fill:none;
+            stroke: #00ffa0;
+            stroke-width: 0.26px;
+            stroke-linecap: butt;
+            stroke-linejoin: miter;
+            cursor: pointer;
+            &-active {
+            fill:none;
+            stroke: #000000;
+            stroke-width: 0.26px;
+            stroke-linecap: butt;
+            stroke-linejoin: miter;
+            }
+        }
+        &-fill {
+            fill: #0a192f;
+            cursor: pointer;
+            &-active {
+            fill: #00ffa0;
+            }
+        }
+        &-fill-secondary-active {
+            fill: $font-bright;
         }
     }
 }

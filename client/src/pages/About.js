@@ -29,11 +29,11 @@ const About = () => {
           <p className='body-1'>I love what I do and the endless possibilities of what to learn next and what direction to take my career. No matter where I end up, I know that this is the industry I want to be in. I am still planning on going back to school for Computer Science. I am more than happy to stay in web development for the time being but long term I want to expand my knowledge more into the world of Software Engineering.</p>
           <p className='body-1'>In the immediate future I am looking to start my journey towards software engineering as well as open myself up to freelance opportunities.</p>
         </section>
-
-        <section className='hobbies'>
-          <HobbiesImage />
-        </section>
       </article>
+      
+      <section className='hobbies'>
+        <HobbiesImage />
+      </section>
     </main>
   )
 }
