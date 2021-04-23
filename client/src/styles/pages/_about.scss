@@ -73,6 +73,9 @@
 
 .hobbies {
     width: 100%;
+    h4 {
+        color: $accent;
+    }
     &-image {
         max-height: 800px;
         width: 100%;

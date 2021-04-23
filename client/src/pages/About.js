@@ -1,9 +1,16 @@
-import React from 'react'
+import React, { useState } from 'react'
 import SideBack from '../components/SideBack'
 import HobbiesImage from '../assets/HobbiesImage'
 
 
 const About = () => {
+  const [activeHobby, setActiveHobby] = useState('')
+
+  const handleClick = (e) => {
+    let hobby = e.target.id
+    setActiveHobby(hobby)
+  }
+
   return (
     <main className='about'>
       <SideBack route='/#about' />
@@ -31,8 +38,13 @@ const About = () => {
         </section>
       </article>
       
-      <section className='hobbies'>
-        <HobbiesImage />
+      <section className='hobbies' style={{paddingBottom: activeHobby.length > 0 ? '0' : '29px'}}>
+        <HobbiesImage activeHobby={activeHobby} handleClick={handleClick} />
+        {activeHobby.length > 0 && 
+          <div>
+            <h4 style={{margin: '0 0 0 0'}}>{activeHobby}</h4>
+          </div>
+        }
       </section>
     </main>
   )

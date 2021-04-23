@@ -1,14 +1,7 @@
-import React, { useState } from 'react'
+import React from 'react'
 import BobRoss from './bob-ross.png'
 
-const HobbiesImage = () => {
-  const [activeHobby, setActiveHobby] = useState('')
-
-  const handleClick = (e) => {
-    let hobby = e.target.id
-    setActiveHobby(hobby)
-  }
-
+const HobbiesImage = ({ activeHobby, handleClick }) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
