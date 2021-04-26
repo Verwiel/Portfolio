@@ -1,12 +1,9 @@
 import React from 'react'
 
-const Project = ({ name, thumbnail, className, openProject }) => {
+const Project = ({ name, thumbnail }) => {
   return (
-    <li className={className} onClick={openProject}>
-      <a href="#projects">
-        <img src={thumbnail} alt={name} />
+    <li style={{backgroundImage: `url(${thumbnail})`}}>
         <p>{name}</p>
-      </a>
     </li>
   )
 }
