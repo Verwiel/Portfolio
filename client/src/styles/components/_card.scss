@@ -4,6 +4,17 @@
   transition: all .3s ease-in-out;
   filter: grayscale(100);
   cursor: pointer;
+
+  a {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    p {
+      padding: 5px;
+      color: $font;
+    }
+  }
   
   &:hover {
     filter: grayscale(0);
@@ -15,6 +26,7 @@
     font-size: 14px;
     text-decoration: none;
     color: black;
+    background-color: $background-shadow;
     margin: 0;
   }
 }
