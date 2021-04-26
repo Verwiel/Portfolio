@@ -1,11 +1,15 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
+import useWindowDimensions from '../hooks/useWindowDimensions'
 import SideBack from '../components/SideBack'
 import HobbiesImage from '../assets/HobbiesImage'
+import AboutMeDrawing from '../assets/about-me-drawing.svg'
+
 
 
 const About = () => {
   const [activeHobby, setActiveHobby] = useState('')
+  const { width } = useWindowDimensions()
 
   const handleClick = (e) => {
     let hobby = e.target.id
@@ -19,13 +23,14 @@ const About = () => {
         <article>
           <h1>About Me</h1>
         </article>
+        <img src={AboutMeDrawing} alt='About Me' />
       </header>
 
       <article className='about-content'>
         <section>
           <h2>What I'm doing</h2>
           <p className='body-1'>I’m currently working at InsideOut Development as an Application Developer writing in React, Node/Express, MySQL, and Sass. Being on such a small team has enabled me to have a hand in Authorization and Authentication systems, Registration and Payment processes, Salesforce Integrations, Analytics, and more (check out 
-          my <Link to='/portfolio'>projects</Link>).</p>
+          my <Link to='/portfolio' className='hyper-link'>projects</Link>).</p>
         </section>
 
         <section>
@@ -40,19 +45,21 @@ const About = () => {
         </section>
 
         <section>
-          <h2>Not Work Stuff</h2>
+          <h2>Who I am</h2>
           <p className='body-1'>I have a very laid back/chill personality and a strong work ethic. When i’m not coding I love camping, video games, snowboarding, art, and brewing beer (thanks Utah for your 3.2% beer). I’ve also recently started getting into bouldering/rock climbing and teaching myself guitar. Checkout the interactive hobbies image I made below!</p>
         </section>
       </article>
       
-      <section className='hobbies' style={{paddingBottom: activeHobby.length > 0 ? '0' : '39px'}}>
+      <section className='hobbies'>
         <HobbiesImage activeHobby={activeHobby} handleClick={handleClick} />
         {activeHobby.length > 0 ?
           <div>
             <h4 style={{margin: '10px 0 0 0'}}>{activeHobby}</h4>
           </div>
           :
-          <h4 style={{margin: '10px 0 0 0'}}>Click on something!</h4>
+          <div>
+            <h4 style={{margin: '10px 0 0 0'}}>{width > 600 ? 'Click on' : 'Touch'} something!</h4>
+          </div>
         }
       </section>
     </main>

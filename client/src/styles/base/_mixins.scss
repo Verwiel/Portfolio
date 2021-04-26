@@ -42,10 +42,11 @@
   padding: 75px 10vw;
   @media (max-width: $breakpoint-desktop){
     max-width: 90vw;
-    padding: 60px 5vw;
+    padding: 60px 10vw;
     min-height: calc(100vh - 120px);
   }
   @media (max-width: $breakpoint-mobile){
+    padding: 60px 5vw;
     min-height: calc(100vh - 120px);
   }
 }
