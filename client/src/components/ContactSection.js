@@ -17,11 +17,13 @@ const ContactSection = () => {
     <article id='contact' className='homepage-section'>
       <h2>Contact</h2>
       <section>
-        <p className='body-1'>Find me on social media or send me an email if you're interested in learning more!</p>
+        <p className='body-1'>Find me on social media or shoot me an email if you’re interested in getting in touch with me!</p>
         <ul>
           {socialLinksMap}
         </ul>
-        <button className='btn-green'>Hit me up</button>
+        <a href='mailto: drew_verwiel@outlook.com'>
+          <button className='btn-green' >hit me up</button>
+        </a>
       </section>
       {/* Image of Phone, Envelope, Laptop*/}
       <img className='home-background' src={HeadshotDrawing} />
