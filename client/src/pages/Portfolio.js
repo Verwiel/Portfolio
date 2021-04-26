@@ -1,6 +1,6 @@
 import React from 'react'
 import SideBack from '../components/SideBack'
-import ProjectList from '../components/ProjectsV2'
+import ProjectList from '../components/ProjectsList'
 import Technologies from '../components/Technologies'
 import ProjectsDrawing from '../assets/projects-drawing.svg'
 
