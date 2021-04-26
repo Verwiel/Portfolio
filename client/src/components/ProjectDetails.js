@@ -6,7 +6,7 @@ const ProjectDetails = ({ name, description, languages, images }) => {
   const [activeIndex, setActiveIndex] = useState(0)
   const imageMap = images.map((image, i) => {
     return (
-      <p key={i} className={i === activeIndex ? 'carousel-slides-active' : 'carousel-slides-inactive'}>{image}</p>
+      <img key={i} className={i === activeIndex ? 'carousel-slides-active' : 'carousel-slides-inactive'} src={image} alt={image} />
     )
   })
 
@@ -28,6 +28,11 @@ const ProjectDetails = ({ name, description, languages, images }) => {
   
   return (
     <div className='carousel'>
+      <article className='carousel-info'>
+        <h3>{name}</h3>
+        <p>{description}</p>
+        <p>{languages}</p>
+      </article>
       <div className='carousel-slides'>
         <button onClick={previousImage}>
           <FontAwesomeIcon icon={faChevronLeft} />
@@ -37,11 +42,6 @@ const ProjectDetails = ({ name, description, languages, images }) => {
           <FontAwesomeIcon icon={faChevronRight} />
         </button>
       </div>
-      <article className='carousel-info'>
-        <h3>{name}</h3>
-        <p>{description}</p>
-        <p>{languages}</p>
-      </article>
     </div>
   )
 }

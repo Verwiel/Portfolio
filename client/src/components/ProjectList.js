@@ -26,6 +26,9 @@ const ProjectList = () => {
   return (
     <main className='projects'>
       <h2>Projects</h2>
+      <ul>
+        {projectMap}
+      </ul>
       {projectOpen &&
         <ProjectDetails
           name={currentProject.name}
@@ -34,9 +37,6 @@ const ProjectList = () => {
           images={currentProject.images}
         />
       }
-      <ul>
-        {projectMap}
-      </ul>
     </main>
   )
 }
