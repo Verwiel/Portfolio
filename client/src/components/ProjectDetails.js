@@ -33,15 +33,21 @@ const ProjectDetails = ({ name, description, languages, images }) => {
         <p>{description}</p>
         <p>{languages}</p>
       </article>
-      <div className='carousel-slides'>
-        <button onClick={previousImage}>
-          <FontAwesomeIcon icon={faChevronLeft} />
-        </button>
-        {imageMap}
-        <button onClick={nextImage}>
-          <FontAwesomeIcon icon={faChevronRight} />
-        </button>
-      </div>
+      {images.length > 0 &&
+        <div className='carousel-slides'>
+          {images.length > 1 &&
+            <button onClick={previousImage}>
+              <FontAwesomeIcon icon={faChevronLeft} />
+            </button>
+          }
+          {imageMap}
+          {images.length > 1 &&
+            <button onClick={nextImage}>
+              <FontAwesomeIcon icon={faChevronRight} />
+            </button>
+          }
+        </div>
+      }
     </div>
   )
 }

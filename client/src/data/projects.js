@@ -20,6 +20,7 @@ import SnapshotReport1 from '../assets/Projects/SnapshotReport1.PNG'
 import SnapshotReport2 from '../assets/Projects/SnapshotReport2.PNG'
 import SnapshotSurvey from '../assets/Projects/SnapshotSurvey.PNG'
 import SubmitInvites from '../assets/Projects/SubmitInvites.PNG'
+import PortfolioSite from '../assets/logo_drawing.svg'
 
 
 export const projectData = [
@@ -98,10 +99,10 @@ export const projectData = [
   {
     "id": 9,
     "name": "Portfolio Website",
-    "thumbnail": testThumb,
+    "thumbnail": PortfolioSite,
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
     "languages": "React, Sass",
-    "images": ['image 1', 'image 2', 'image 3'],
+    "images": [PortfolioSite],
     "link": '',
   },
   {
