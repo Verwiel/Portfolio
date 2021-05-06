@@ -18,7 +18,7 @@ const Home = () => {
   const contactRef = useRef()
   useLockBodyScroll()
   const [handleTouchStart, handleTouchMove, handleTouchEnd] = useSwipe() 
-  let timer = 750
+  let timer = 1000
 
   function navigate(destination, ref){
     history.push(destination)
