@@ -21,7 +21,11 @@ const Header = () => {
   return (
     <header className={scrolled ? 'global-header active-header' : 'global-header'}>
       <div className='global-header-content'>
-        <Link to='/' className='global-header-content-logo'>
+        <Link 
+          to='/' 
+          className='global-header-content-logo' 
+          onClick={() => window.scrollTo({top: 0, left: 0, behavior: 'smooth'})}
+        >
           <img src={Logo} alt='Drew Verwiel Logo' />
           {(showName || scrolled) && 
             <h4 className='fade-in'>Drew Verwiel</h4>
