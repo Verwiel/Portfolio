@@ -14,7 +14,7 @@ const SideNav = ({ location }) => {
       <li key={i}>
         <NavHashLink 
           to={nav}
-          smooth 
+          scroll={(el) => el.scrollIntoView({ behavior: 'smooth', block: 'center' })}
           className={location.hash.length < 1 && i === 0 ? 'side-link-active' : 'side-link'} 
           activeClassName='side-link-active'
         >
