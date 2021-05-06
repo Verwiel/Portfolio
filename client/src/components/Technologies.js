@@ -8,7 +8,7 @@ const Technologies = () => {
 
 	return (
 		<div>
-			<h2>Technologies</h2>
+			<h2>Languages & tech I use</h2>
 			{technologiesMap}
 		</div>
 	)

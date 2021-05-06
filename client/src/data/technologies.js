@@ -1,4 +1,5 @@
 import ReactLogo from '../assets/technologies/react.png'
+import TypescriptLogo from '../assets/technologies/typescript.png'
 import NodeLogo from '../assets/technologies/node.png'
 import ExpressLogo from '../assets/technologies/express.png'
 import MySQLLogo from '../assets/technologies/mysql.png'
@@ -15,6 +16,10 @@ export const technologiesData = [
     {
         "name" : "React",
         "image" : ReactLogo
+    },
+    {
+        "name" : "Typescript",
+        "image" : TypescriptLogo
     },
     {
         "name" : "Node",

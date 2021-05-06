@@ -87,10 +87,20 @@ h5 {
   
   .hyper-link {
     color: $accent;
-    font-size: .85em;
+    font-size: 1em;
   }
 }
 
-// @media (max-width: $breakpoint-mobile){
-
-// }
+@media (max-width: $breakpoint-mobile){
+  h1 {
+    font-size: 4em;
+  }
+  
+  h2 {
+    font-size: 2em;
+  }
+  
+  h3 {
+    font-size: 2em;
+  }
+}

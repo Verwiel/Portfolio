@@ -10,7 +10,7 @@ const Portfolio = () => {
       <SideBack route='/#projects' />
       <header className='portfolio-header'>
         <article>
-          <h1>Portfolio</h1>
+          <h1>Projects</h1>
         </article>
         <img src={ProjectsDrawing} alt='Portfolio' />
       </header>
