@@ -58,7 +58,7 @@ const About = () => {
           </div>
           :
           <div>
-            <h4 style={{margin: '10px 0 0 0'}}>{width > 600 ? 'Click on' : 'Touch'} something!</h4>
+            <h4 style={{margin: '10px 0 0 0'}}>{width > 600 ? 'Click on' : 'Tap'} something!</h4>
           </div>
         }
       </section>
