@@ -1,6 +1,6 @@
 import React from 'react'
 import SideBack from '../components/SideBack'
-import ProjectList from '../components/ProjectsList'
+// import ProjectList from '../components/ProjectsList'
 import Technologies from '../components/Technologies'
 import ProjectsDrawing from '../assets/projects-drawing.svg'
 
@@ -17,7 +17,9 @@ const Portfolio = () => {
 
       <article className='portfolio-content'>
         <section>
-          <ProjectList />
+          {/* <ProjectList /> */}
+          <h2>Projects list coming soon!</h2>
+          <p>Until then you can check out my projects at <a href='https://github.com/Verwiel' className='hyper-link'>Github</a> or visit my current employers website: <a href='https://insideoutdev.com/' className='hyper-link'>InsideOut Development</a> </p>
         </section>
         <section>
           <Technologies /> 

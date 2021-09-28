@@ -23,6 +23,14 @@
                 height: 50vh;
             }
         }
+        &-content {
+            h2, h3 {
+                color: $font-bright;
+            }
+            p {
+                color: $font;
+            }
+        }
     }
 }
 
@@ -46,6 +54,14 @@
             }
             img, article {
                 width: 50%;
+            }
+        }
+        &-content {
+            h2, h3 {
+                color: $font-bright;
+            }
+            p {
+                color: $font;
             }
         }
     }

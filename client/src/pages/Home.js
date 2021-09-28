@@ -121,7 +121,7 @@ const Home = () => {
       >
         <article className='home-hero-content homepage-section' >
           <h1>D<span>rew </span>V<span>erwiel</span></h1>
-          <h3>Full Stack Developer</h3>
+          <h2>Full Stack Developer</h2>
         </article>
         <img className='home-background' src={HeadshotDrawing} />
       </header>
