@@ -22,6 +22,7 @@ const Portfolio = () => {
 
           <h2 className='h3'>Personal</h2>
           <ProjectsList isPersonal={true} /> */}
+
           <h2>Projects list coming soon!</h2>
           <p>Until then you can check out my projects at <a href='https://github.com/Verwiel' className='hyper-link'>Github</a> or visit my current employers website: <a href='https://insideoutdev.com/' className='hyper-link'>InsideOut Development</a> </p>
         </section>
