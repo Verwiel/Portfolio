@@ -3,7 +3,7 @@ import React from 'react'
 const Project = ({ name, thumbnail }) => {
   return (
     <li style={{backgroundImage: `url(${thumbnail})`}}>
-        <p>{name}</p>
+      <p>{name}</p>
     </li>
   )
 }

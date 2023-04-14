@@ -21,7 +21,7 @@ const HobbiesImage = ({ activeHobby, handleClick }) => {
           <feComposite in="colormatrix2" in2="SourceGraphic" operator="in" k2="1" result="composite2"/>
         </filter>
       </defs>
-      <g name="bouldering" transform="translate(-33.984166,-37.230644)">
+      <g name="bouldering" transform="translate(-33.984166,-37.230644)" onMouseOver={handleClick}>
         <g>
           <g
             transform="translate(37.497604,-62.664666)"
@@ -90,6 +90,7 @@ const HobbiesImage = ({ activeHobby, handleClick }) => {
       <g
         name="camping"
         transform="translate(-33.984166,-37.230644)"
+        onMouseOver={handleClick}
       >
         <g>
           <g transform="translate(55.090784,-61.250685)">
@@ -119,6 +120,7 @@ const HobbiesImage = ({ activeHobby, handleClick }) => {
       <g
         name="snowboarding"
         transform="translate(-33.984166,-37.230644)"
+        onMouseOver={handleClick}
       >
         <g>
           <path
@@ -140,6 +142,7 @@ const HobbiesImage = ({ activeHobby, handleClick }) => {
       <g
         name="art"
         transform="translate(-33.984166,-37.230644)"
+        onMouseOver={handleClick}
       >
         <g>
           <path
@@ -174,6 +177,7 @@ const HobbiesImage = ({ activeHobby, handleClick }) => {
       <g
         name="guitar"
         transform="translate(-33.984166,-37.230644)"
+        onMouseOver={handleClick}
       >
         <g>
           <path
@@ -200,6 +204,7 @@ const HobbiesImage = ({ activeHobby, handleClick }) => {
       <g
         name="brewing"
         transform="translate(-33.984166,-37.230644)"
+        onMouseOver={handleClick}
       >
         <g>
           <path

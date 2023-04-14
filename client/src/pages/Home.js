@@ -2,10 +2,10 @@ import React, { useRef, useState, useEffect } from 'react'
 import { useLocation, useHistory } from 'react-router-dom'
 import { useLockBodyScroll } from '../hooks/useLockBodyScroll'
 import { useSwipe } from '../hooks/useSwipe'
-import SideNav from '../components/SideNav'
-import AboutMeSection from '../components/AboutMeSection'
-import ProjectsSection from '../components/ProjectsSection'
-import ContactSection from '../components/ContactSection'
+import SideNav from '../components/navigation/SideNav'
+import AboutMeSection from '../components/sections/AboutMeSection'
+import ProjectsSection from '../components/sections/ProjectsSection'
+import ContactSection from '../components/sections/ContactSection'
 import HeadshotDrawing from '../assets/headshot-drawing.svg'
 
 const Home = () => { 
@@ -123,7 +123,7 @@ const Home = () => {
           <h1>D<span>rew </span>V<span>erwiel</span></h1>
           <h2>Full Stack Developer</h2>
         </article>
-        <img className='home-background' src={HeadshotDrawing} />
+        <img className='home-background' src={HeadshotDrawing} alt='' />
       </header>
 
       <div 

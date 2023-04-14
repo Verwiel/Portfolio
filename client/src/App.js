@@ -1,9 +1,14 @@
 import React from 'react'
 import { Route, Switch } from 'react-router-dom'
-import Header from './components/Header'
+import Header from './components/navigation/Header'
 import Home from './pages/Home'
 import About from './pages/About'
 import Portfolio from './pages/Portfolio'
+import IODCommunities from './pages/projects/IODCommunities'
+import IODEmployee from './pages/projects/IODEmployee'
+import IODWebsite from './pages/projects/IODWebsite'
+import OSRS from './pages/projects/OSRS'
+import Wordle from './pages/projects/Wordle'
 // Font Awesome
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { fab } from '@fortawesome/free-brands-svg-icons'
@@ -16,8 +21,14 @@ function App() {
       <Header />
       <Switch>
         <Route exact path="/" component={Home} />
-        <Route path="/about" component={About} />
-        <Route path="/portfolio" component={Portfolio} />
+        <Route exact path="/about" component={About} />
+        <Route exact path="/portfolio" component={Portfolio} />
+
+        <Route path="/portfolio/iod-communities" component={IODCommunities} />
+        <Route path="/portfolio/iod-employee" component={IODEmployee} />
+        <Route path="/portfolio/iod-website" component={IODWebsite} />
+        <Route path="/portfolio/osrs-tracker" component={OSRS} />
+        <Route path="/portfolio/wordle-clone" component={Wordle} />
       </Switch>
     </div>
   )

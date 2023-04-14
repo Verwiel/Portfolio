@@ -1,0 +1,29 @@
+@media (max-width: $breakpoint-mobile){
+    .project-details {
+        @include full-page;
+        overflow: hidden;
+        h1 {
+            margin: 0;
+            color: $font-bright;
+        }
+    }
+}
+
+@media (min-width: $breakpoint-mobile){
+    .project-details {
+        @include full-page;
+        overflow: hidden;
+        h1 {
+            margin: 0;
+            color: $font-bright;
+        }
+    }
+}
+
+@media (min-width: $breakpoint-desktop){
+    .project-details {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+}

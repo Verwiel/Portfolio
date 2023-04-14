@@ -1,10 +1,9 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import useWindowDimensions from '../hooks/useWindowDimensions'
-import SideBack from '../components/SideBack'
+import SideBack from '../components/navigation/SideBack'
 import HobbiesImage from '../assets/HobbiesImage'
 import AboutMeDrawing from '../assets/about-me-drawing.svg'
-
 
 
 const About = () => {
@@ -23,7 +22,7 @@ const About = () => {
         <article>
           <h1>About Me</h1>
         </article>
-        <img src={AboutMeDrawing} alt='About Me' />
+        <img src={AboutMeDrawing} alt='' />
       </header>
 
       <article className='about-content'>

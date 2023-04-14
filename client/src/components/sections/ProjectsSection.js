@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import ProjectsDrawing from '../assets/projects-drawing.svg'
+import ProjectsDrawing from '../../assets/projects-drawing.svg'
 
 const ProjectsSection = () => {
   return (
@@ -12,7 +12,7 @@ const ProjectsSection = () => {
       <Link to='/portfolio'>
         <button className='btn-green'>check out my projects</button>
       </Link>
-      <img className='home-background' src={ProjectsDrawing} />
+      <img className='home-background' src={ProjectsDrawing} alt='' />
     </article>
   )
 }

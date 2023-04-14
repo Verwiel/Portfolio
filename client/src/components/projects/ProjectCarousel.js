@@ -2,11 +2,13 @@ import React, { useState } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons'
 
-const ProjectDetails = ({ name, description, languages, images }) => {
+const ProjectCarousel = ({ images }) => {
   const [activeIndex, setActiveIndex] = useState(0)
   const imageMap = images.map((image, i) => {
     return (
-      <img key={i} className={i === activeIndex ? 'carousel-slides-active' : 'carousel-slides-inactive'} src={image} alt={image} />
+      <div key={i} className={i === activeIndex ? 'carousel-slides-active' : 'carousel-slides-inactive'}>
+        <img  src={image} alt={image} />
+      </div>
     )
   })
 
@@ -28,11 +30,6 @@ const ProjectDetails = ({ name, description, languages, images }) => {
   
   return (
     <div className='carousel'>
-      <article className='carousel-info'>
-        <h3>{name}</h3>
-        <p>{description}</p>
-        <p>{languages}</p>
-      </article>
       {images.length > 0 &&
         <div className='carousel-slides'>
           {images.length > 1 &&
@@ -52,4 +49,4 @@ const ProjectDetails = ({ name, description, languages, images }) => {
   )
 }
 
-export default ProjectDetails
+export default ProjectCarousel

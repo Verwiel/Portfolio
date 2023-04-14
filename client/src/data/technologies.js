@@ -11,6 +11,8 @@ import MongoDBLogo from '../assets/technologies/mongodb.png'
 import HTMLLogo from '../assets/technologies/html5.png'
 import CSSLogo from '../assets/technologies/css3.png'
 import JSLogo from '../assets/technologies/javascript.png'
+import PythonLogo from '../assets/technologies/python.png'
+import FlaskLogo from '../assets/technologies/flask.svg'
 
 export const technologiesData = [
     {
@@ -36,6 +38,14 @@ export const technologiesData = [
     {
         "name" : "Sass",
         "image" : SassLogo
+    },
+    {
+        "name" : "Python",
+        "image" : PythonLogo
+    },
+    {
+        "name" : "Flask",
+        "image" : FlaskLogo
     },
     {
         "name" : "GraphQL",

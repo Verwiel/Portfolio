@@ -1,7 +1,7 @@
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import HeadshotDrawing from '../assets/headshot-drawing.svg'
-import socialLinks from '../data/socialNav.json'
+import HeadshotDrawing from '../../assets/headshot-drawing.svg'
+import socialLinks from '../../data/socialNav.json'
 
 const ContactSection = () => {
 
@@ -26,7 +26,7 @@ const ContactSection = () => {
         </a>
       </section>
       {/* Image of Phone, Envelope, Laptop*/}
-      <img className='home-background' src={HeadshotDrawing} />
+      <img className='home-background' src={HeadshotDrawing} alt='' />
     </article>
   )
 }

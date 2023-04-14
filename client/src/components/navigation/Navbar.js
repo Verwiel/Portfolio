@@ -1,13 +1,13 @@
 import React, { useRef, useState } from 'react'
 import { NavLink } from 'react-router-dom'
 import { NavHashLink } from 'react-router-hash-link'
-import useWindowDimensions from '../hooks/useWindowDimensions'
-import useOutsideClick from '../hooks/useOutsideClick'
+import useWindowDimensions from '../../hooks/useWindowDimensions'
+import useOutsideClick from '../../hooks/useOutsideClick'
 import Hamburger from './Hamburger'
-import NavMenu from '../components/NavMenu'
+import NavMenu from './NavMenu'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import internalLinks from '../data/internalNav.json'
-import socialLinks from '../data/socialNav.json'
+import internalLinks from '../../data/internalNav.json'
+import socialLinks from '../../data/socialNav.json'
 
 const Navbar = () => {
   const navHamburger = useRef()

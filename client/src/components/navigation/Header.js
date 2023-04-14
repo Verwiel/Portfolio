@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { Link, useLocation } from 'react-router-dom'
 import Navbar from './Navbar'
-import Logo from '../assets/logo_drawing.svg'
+import Logo from '../../assets/logo_drawing.svg'
 
 const Header = () => {
   const [scrolled, setScrolled] = useState(false)
@@ -26,7 +26,7 @@ const Header = () => {
           className='global-header-content-logo' 
           onClick={() => window.scrollTo({top: 0, left: 0, behavior: 'smooth'})}
         >
-          <img src={Logo} alt='Drew Verwiel Logo' />
+          <img src={Logo} alt='' />
           {(showName || scrolled) && 
             <h4 className='fade-in'>Drew Verwiel</h4>
           }
