@@ -1,4 +1,4 @@
-import testThumb from './../assets/projects/test.jpg'
+import testThumb from '../assets/projects/test.jpg'
 import IODWebsite from '../assets/projects/iod-website.svg'
 import IODCommunities from '../assets/projects/iod-communities.svg'
 import IODEmployees from '../assets/projects/iod-employee.svg'
