@@ -4,10 +4,10 @@ import SideBack from '../../components/navigation/SideBack'
 
 const IODWebsite = () => {
   return (
-    <article className='project-details'>
+    <main className='project-details'>
       <SideBack route='/portfolio' />
       <ProjectHeader title='InsideOut Development - Website' description='' />
-    </article>
+    </main>
   )
 }
 

@@ -4,10 +4,10 @@ import SideBack from '../../components/navigation/SideBack'
 
 const Wordle = () => {
   return (
-    <article className='project-details'>
+    <main className='project-details'>
       <SideBack route='/portfolio' />
       <ProjectHeader title='Wordle' description='' />
-    </article>
+    </main>
   )
 }
 

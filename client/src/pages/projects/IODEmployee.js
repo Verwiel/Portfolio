@@ -4,10 +4,10 @@ import SideBack from '../../components/navigation/SideBack'
 
 const IODEmployee = () => {
   return (
-    <article className='project-details'>
+    <main className='project-details'>
       <SideBack route='/portfolio' />
       <ProjectHeader title='InsideOut Development - Employee Portal' description='' />
-    </article>
+    </main>
   )
 }
 

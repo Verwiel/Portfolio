@@ -5,10 +5,9 @@ import Project from './Project'
 
 const ProjectsList = ({ isPersonal }) => {
 
-  const projectMap = projectData.filter(project => project.isPersonal === isPersonal).map((project, i) => (
+  const projectMap = projectData.filter(project => project.isPersonal === isPersonal).map(project => (
     <Link to={`/portfolio/${project.link}`}
       key={project.id} 
-      // className={i === 0 ? 'projects-card-featured' : 'projects-card-item'}
       className='projects-card-item'
     >
       <Project 
