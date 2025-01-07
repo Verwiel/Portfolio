@@ -13,11 +13,16 @@ import CSSLogo from '../assets/technologies/css3.png'
 import JSLogo from '../assets/technologies/javascript.png'
 import PythonLogo from '../assets/technologies/python.png'
 import FlaskLogo from '../assets/technologies/flask.svg'
+import NextLogo from '../assets/technologies/next-js.svg'
 
 export const technologiesData = [
     {
         "name" : "React",
         "image" : ReactLogo
+    },
+    {
+        "name": "Next",
+        "image": NextLogo
     },
     {
         "name" : "Typescript",

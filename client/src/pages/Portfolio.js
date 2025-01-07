@@ -24,7 +24,7 @@ const Portfolio = () => {
         </section>
         <section>
           <h3>Languages & tech I use</h3>
-          <Technologies languages={["React", "Typescript", "Node", "Express", "MySQL", "Sass", "Python", "Flask", "GraphQL", "Apollo", "Prisma", "MongoDB", "HTML 5", "Javascript", "CSS 3"]} /> 
+          <Technologies languages={["React", "Next", "Typescript", "Node", "Express", "MySQL", "Sass", "Python", "Flask", "GraphQL", "Apollo", "Prisma", "MongoDB", "HTML 5", "Javascript", "CSS 3"]} /> 
         </section>
       </article>
     </main>

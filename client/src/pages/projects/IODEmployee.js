@@ -9,7 +9,7 @@ const IODEmployee = () => {
     <main className='project-details'>
       <SideBack route='/portfolio' />
       <ProjectHeader title='InsideOut Development - Employee Portal' description='' />
-      <Technologies languages={["React", "Typescript", "Node", "Express", "MySQL", "Sass"]} /> 
+      <Technologies languages={["React", "Next", "Typescript", "Node", "Express", "MySQL", "Sass"]} /> 
       <article>
         <small>Due to this being a private codebase, I am unable to share a link to the code repository.</small>
         <br />

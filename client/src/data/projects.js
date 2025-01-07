@@ -1,8 +1,13 @@
-import IODWebsite from '../assets/projects/iod-website.svg'
-import IODCommunities from '../assets/projects/iod-communities.svg'
-import IODEmployees from '../assets/projects/iod-employee.svg'
-import Wordle from '../assets/projects/wordle.svg'
-import OSRS from '../assets/projects/osrs.svg'
+import IODWebsite from '../assets/projects/thumbnails/iod-website.svg'
+import IODCommunities from '../assets/projects/thumbnails/iod-communities.svg'
+import IODEmployees from '../assets/projects/thumbnails/iod-employee.svg'
+import Wordle from '../assets/projects/thumbnails/wordle.svg'
+import OSRS from '../assets/projects/thumbnails/osrs.svg'
+// import test from '../assets/projects/thumbnails/test.jpg'
+import Nextflix from '../assets/projects/thumbnails/nextflix.svg'
+import BevFinder from '../assets/projects/thumbnails/beverage-finder.svg'
+import DiscWeather from '../assets/projects/thumbnails/discord-weather.svg'
+
 
 export const projectData = [
   {
@@ -34,6 +39,15 @@ export const projectData = [
   },
   {
     "id": 4,
+    "name": "Nextflix",
+    "thumbnail": Nextflix,
+    "description": 'A "clone" I created of NYT Wordle. I added some extra features and allow for unlimited play everyday.',
+    "languages": "Next, Hasura, Magic Link, GraphQL, Youtube API",
+    "link": 'nextflix',
+    "isPersonal": true
+  },
+  {
+    "id": 5,
     "name": "Wordle Clone",
     "thumbnail": Wordle,
     "description": 'A "clone" I created of NYT Wordle. I added some extra features and allow for unlimited play everyday.',
@@ -42,7 +56,25 @@ export const projectData = [
     "isPersonal": true
   },
   {
-    "id": 5,
+    "id": 6,
+    "name": "Discord Weatherbot",
+    "thumbnail": DiscWeather,
+    "description": 'A Node app that interacts with Discord to give you the current weather based on entered parameters.',
+    "languages": "Node, Discord",
+    "link": 'discord-weather',
+    "isPersonal": true
+  },
+  {
+    "id": 7,
+    "name": "Beverage Finder",
+    "thumbnail": BevFinder,
+    "description": 'A Next app that allows you to let the browser use your location and finds coffee shops or breweries nearby.',
+    "languages": "Next, Foursquare API, Unsplash API, Geolocation API, Airtable",
+    "link": 'beverage-finder',
+    "isPersonal": true
+  },
+  {
+    "id": 8,
     "name": "Old-school Runescape Tracker",
     "thumbnail": OSRS,
     "description": "Track quests and a characters levels/highscores from Old-school Runescape in this python/react app.",
